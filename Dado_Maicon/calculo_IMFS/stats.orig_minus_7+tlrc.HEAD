@@ -1,0 +1,234 @@
+
+type = string-attribute
+name = HISTORY_NOTE
+count = 6185
+'[nathalia@nathalia: Sun Jun  7 18:14:00 2015] ===================================\n[nathalia@nathalia: Sun Jun  7 18:14:00 2015] === History of inputs to 3dcalc ===\n[nathalia@nathalia: Sun Jun  7 18:14:00 2015] === Input a:\n[nathalia@nathalia: Sun Jun  7 18:14:00 2015] [nathalia@marfim: Sat May 30 21:20:43 2015] ===================================\n[nathalia@marfim: Sat May 30 21:20:43 2015] === History of inputs to 3dcalc ===\n[nathalia@marfim: Sat May 30 21:20:43 2015] === Input a:\n[nathalia@marfim: Sat May 30 21:20:43 2015] [nathalia@marfim: Sat May 30 21:20:39 2015] ===================================\n[nathalia@marfim: Sat May 30 21:20:39 2015] === History of inputs to 3dcalc ===\n[nathalia@marfim: Sat May 30 21:20:39 2015] === Input a:\n[nathalia@marfim: Sat May 30 21:20:39 2015] [nathalia@marfim: Sat May 30 17:54:06 2015] 3dDespike -NEW -nomask -prefix pb01.SERIE3.r01.despike pb00.SERIE3.r01.tcat+orig\n[nathalia@marfim: Sat May 30 17:54:07 2015] 3dTshift -tzero 0 -quintic -prefix pb02.SERIE3.r01.tshift -tpattern alt+z pb01.SERIE3.r01.despike+orig\n[nathalia@marfim: Sat May 30 21:13:09 2015] 3dNwarpApply -master SERIE1_unif_ns+tlrc -dxyz 3 -source pb02.SERIE3.r01.tshift+orig -nwarp 'anat.aff.qw_WARP.nii mat.r01.warp.aff12.1D' -prefix rm.epi.nomask.r01\n[nathalia@marfim: Sat May 30 21:20:39 2015] === Input b:\n[nathalia@marfim: Sat May 30 21:20:39 2015] [nathalia@marfim: Sat May 30 17:54:06 2015] 3dDespike -NEW -nomask -prefix pb01.SERIE3.r01.despike pb00.SERIE3.r01.tcat+orig\n[nathalia@marfim: Sat May 30 17:54:07 2015] 3dTshift -tzero 0 -quintic -prefix pb02.SERIE3.r01.tshift -tpattern alt+z pb01.SERIE3.r01.despike+orig\n[nathalia@marfim: Sat May 30 21:05:10 2015] 3dcalc -a pb02.SERIE3.r01.tshift+orig -expr 1 -prefix rm.epi.all1\n[nathalia@marfim: Sat May 30 21:20:38 2015] 3dNwarpApply -master SERIE1_unif_ns+tlrc -dxyz 3 -source rm.epi.all1+orig -nwarp 'anat.aff.qw_WARP.nii mat.r01.warp.aff12.1D' -prefix rm.epi.1.r01 -ainterp NN -quiet\n[nathalia@marfim: Sat May 30 21:20:39 2015] 3dTstat -min -prefix rm.epi.min.r01 rm.epi.1.r01+tlrc\n[nathalia@marfim: Sat May 30 21:20:39 2015] 3dcopy rm.epi.min.r01+tlrc mask_epi_extents\n[nathalia@marfim: Sat May 30 21:20:39 2015] ===================================\n[nathalia@marfim: Sat May 30 21:20:39 2015] 3dcalc -a rm.epi.nomask.r01+tlrc -b mask_epi_extents+tlrc -expr 'a*b' -prefix pb03.SERIE3.r01.volreg\n[nathalia@marfim: Sat May 30 21:20:42 2015] 3dmerge -1blur_fwhm 6 -doall -prefix pb04.SERIE3.r01.blur pb03.SERIE3.r01.volreg+tlrc\n[nathalia@marfim: Sat May 30 21:20:43 2015] === Input b:\n[nathalia@marfim: Sat May 30 21:20:43 2015] [nathalia@marfim: Sat May 30 21:20:39 2015] ===================================\n[nathalia@marfim: Sat May 30 21:20:39 2015] === History of inputs to 3dcalc ===\n[nathalia@marfim: Sat May 30 21:20:39 2015] === Input a:\n[nathalia@marfim: Sat May 30 21:20:39 2015] [nathalia@marfim: Sat May 30 17:54:06 2015] 3dDespike -NEW -nomask -prefix pb01.SERIE3.r01.despike pb00.SERIE3.r01.tcat+orig\n[nathalia@marfim: Sat May 30 17:54:07 2015] 3dTshift -tzero 0 -quintic -prefix pb02.SERIE3.r01.tshift -tpattern alt+z pb01.SERIE3.r01.despike+orig\n[nathalia@marfim: Sat May 30 21:13:09 2015] 3dNwarpApply -master SERIE1_unif_ns+tlrc -dxyz 3 -source pb02.SERIE3.r01.tshift+orig -nwarp 'anat.aff.qw_WARP.nii mat.r01.warp.aff12.1D' -prefix rm.epi.nomask.r01\n[nathalia@marfim: Sat May 30 21:20:39 2015] === Input b:\n[nathalia@marfim: Sat May 30 21:20:39 2015] [nathalia@marfim: Sat May 30 17:54:06 2015] 3dDespike -NEW -nomask -prefix pb01.SERIE3.r01.despike pb00.SERIE3.r01.tcat+orig\n[nathalia@marfim: Sat May 30 17:54:07 2015] 3dTshift -tzero 0 -quintic -prefix pb02.SERIE3.r01.tshift -tpattern alt+z pb01.SERIE3.r01.despike+orig\n[nathalia@marfim: Sat May 30 21:05:10 2015] 3dcalc -a pb02.SERIE3.r01.tshift+orig -expr 1 -prefix rm.epi.all1\n[nathalia@marfim: Sat May 30 21:20:38 2015] 3dNwarpApply -master SERIE1_unif_ns+tlrc -dxyz 3 -source rm.epi.all1+orig -nwarp 'anat.aff.qw_WARP.nii mat.r01.warp.aff12.1D' -prefix rm.epi.1.r01 -ainterp NN -quiet\n[nathalia@marfim: Sat May 30 21:20:39 2015] 3dTstat -min -prefix rm.epi.min.r01 rm.epi.1.r01+tlrc\n[nathalia@marfim: Sat May 30 21:20:39 2015] 3dcopy rm.epi.min.r01+tlrc mask_epi_extents\n[nathalia@marfim: Sat May 30 21:20:39 2015] ===================================\n[nathalia@marfim: Sat May 30 21:20:39 2015] 3dcalc -a rm.epi.nomask.r01+tlrc -b mask_epi_extents+tlrc -expr 'a*b' -prefix pb03.SERIE3.r01.volreg\n[nathalia@marfim: Sat May 30 21:20:42 2015] 3dmerge -1blur_fwhm 6 -doall -prefix pb04.SERIE3.r01.blur pb03.SERIE3.r01.volreg+tlrc\n[nathalia@marfim: Sat May 30 21:20:43 2015] 3dTstat -prefix rm.mean_r01 pb04.SERIE3.r01.blur+tlrc\n[nathalia@marfim: Sat May 30 21:20:43 2015] === Input c:\n[nathalia@marfim: Sat May 30 21:20:43 2015] [nathalia@marfim: Sat May 30 17:54:06 2015] 3dDespike -NEW -nomask -prefix pb01.SERIE3.r01.despike pb00.SERIE3.r01.tcat+orig\n[nathalia@marfim: Sat May 30 17:54:07 2015] 3dTshift -tzero 0 -quintic -prefix pb02.SERIE3.r01.tshift -tpattern alt+z pb01.SERIE3.r01.despike+orig\n[nathalia@marfim: Sat May 30 21:05:10 2015] 3dcalc -a pb02.SERIE3.r01.tshift+orig -expr 1 -prefix rm.epi.all1\n[nathalia@marfim: Sat May 30 21:20:38 2015] 3dNwarpApply -master SERIE1_unif_ns+tlrc -dxyz 3 -source rm.epi.all1+orig -nwarp 'anat.aff.qw_WARP.nii mat.r01.warp.aff12.1D' -prefix rm.epi.1.r01 -ainterp NN -quiet\n[nathalia@marfim: Sat May 30 21:20:39 2015] 3dTstat -min -prefix rm.epi.min.r01 rm.epi.1.r01+tlrc\n[nathalia@marfim: Sat May 30 21:20:39 2015] 3dcopy rm.epi.min.r01+tlrc mask_epi_extents\n[nathalia@marfim: Sat May 30 21:20:43 2015] ===================================\n[nathalia@marfim: Sat May 30 21:20:43 2015] 3dcalc -a pb04.SERIE3.r01.blur+tlrc -b rm.mean_r01+tlrc -c mask_epi_extents+tlrc -expr 'c * min(200, a/b*100)*step(a)*step(b)' -prefix pb05.SERIE3.r01.scale\n[nathalia@nathalia: Sun Jun  7 18:14:00 2015] === Input b:\n[nathalia@nathalia: Sun Jun  7 18:14:00 2015] ===================================\n[nathalia@nathalia: Sun Jun  7 18:14:00 2015] 3dcalc -fscale -a pb05.SERIE3.r01.scale.nii -b SERIE3_IMFS7+tlrc.nii -expr '(a-b)' -prefix stats.orig_minus_7~
+
+type = string-attribute
+name = TYPESTRING
+count = 15
+'3DIM_HEAD_ANAT~
+
+type = string-attribute
+name = IDCODE_STRING
+count = 27
+'XYZ_5g8Pbq-NywCdcgWf0H1Row~
+
+type = string-attribute
+name = IDCODE_DATE
+count = 25
+'Sun Jun  7 18:14:00 2015~
+
+type = integer-attribute
+name = SCENE_DATA
+count = 8
+ 2 2 0 -999 -999
+ -999 -999 -999
+
+type = string-attribute
+name = LABEL_1
+count = 5
+'zyxt~
+
+type = string-attribute
+name = LABEL_2
+count = 5
+'zyxt~
+
+type = string-attribute
+name = DATASET_NAME
+count = 5
+'zyxt~
+
+type = integer-attribute
+name = ORIENT_SPECIFIC
+count = 3
+ 1 2 4
+
+type  = float-attribute
+name  = ORIGIN
+count = 3
+           73.5          110.5          -66.5
+
+type  = float-attribute
+name  = DELTA
+count = 3
+             -3             -3              3
+
+type  = float-attribute
+name  = IJK_TO_DICOM
+count = 12
+             -3              0              0           73.5              0
+             -3              0          110.5              0              0
+              3          -66.5
+
+type  = float-attribute
+name  = IJK_TO_DICOM_REAL
+count = 12
+             -3              0              0           73.5              0
+             -3              0          110.5              0              0
+              3          -66.5
+
+type  = float-attribute
+name  = BRICK_STATS
+count = 256
+              0       143.2972      -7.882278       137.8015      -12.52505
+       133.4747      -10.85714       142.1172      -11.80817       139.4955
+      -5.987564       142.1909      -8.895203       143.9785      -6.662285
+       148.5891      -9.456245       148.5509      -10.62317       145.9517
+      -11.26707       144.2384      -10.96609       146.3023      -13.66729
+       146.0988      -11.57049       146.6481      -8.938965       137.4008
+      -8.397232       140.9479      -11.23562       132.7029      -8.069195
+       130.6184      -6.373268       129.5608      -10.01239       138.9991
+      -9.166771       137.1894      -10.54371       129.9086      -8.244728
+       133.3414       -7.24662       131.6572      -11.18145       132.5502
+      -12.72822        137.368      -12.64787       135.5727      -9.009438
+       134.0423      -7.296692       128.2538      -9.427048       140.6271
+      -12.59848       135.3373      -8.549286       129.9667      -6.910469
+       132.4936      -10.47271       146.2225      -10.33015       152.5104
+      -8.090233       121.0594      -7.449127       126.1031      -10.79429
+       130.0054      -9.534317       130.0143      -9.157867       121.3576
+      -10.72421       127.3631      -12.19817       120.3699      -9.077629
+       125.4098      -8.372978       119.5877      -12.35703       123.0668
+      -10.19917       122.4622      -8.296539       123.6197      -10.57931
+       127.0355      -6.583405        126.842      -7.078728       123.7545
+      -13.65889        126.091      -10.82674       123.1183       -10.7382
+        126.478      -10.62839       120.0791      -13.93076       121.7494
+      -14.95454       139.6063      -12.02302       122.4487      -14.23934
+       122.0721      -7.584328       135.0352      -10.38378       120.4807
+      -9.021843       123.3277      -7.863548       125.5177      -7.619415
+       124.0856      -11.56218       121.1104      -12.16528       145.8769
+      -13.17348       125.8584      -12.64555       127.4054      -11.01893
+       128.8849      -8.960495       125.6347      -10.07578       122.4602
+      -8.753853       124.7342      -9.096191        123.918      -8.847511
+       161.6532      -8.153503       139.9014      -8.744301       125.1359
+      -9.940346       126.0202      -8.236748       156.6728      -10.62402
+       164.9842      -14.18375       141.5264      -9.076065       171.3727
+      -7.086281       130.9002       -7.06044       130.1892      -9.899178
+       152.4953      -9.389511       155.0564      -8.079704       174.6661
+      -9.903854       130.3728      -8.664627        165.167      -10.32522
+       127.1139      -9.155441       130.5156      -5.896332       159.0854
+      -5.788261       123.8149      -7.219124       125.9019      -6.260094
+       130.7614      -7.157951       129.0611       -8.03215       133.8823
+      -6.088974       132.9634      -7.234573       140.6706      -8.988571
+       134.5488      -10.27642       134.3219      -8.919701       143.8895
+      -14.14517       159.9361       -8.56192       158.6724      -7.862175
+       132.5036      -11.21992       132.5567      -14.36186       168.1221
+       -13.6535        171.806      -9.790268       132.5296      -7.584846
+       137.1358      -11.46764       129.4612      -11.55155        135.324
+      -11.36427       129.0562      -8.764214       127.5452      -8.281754
+       135.8692      -10.55649       137.6817      -11.05125       137.9664
+      -6.948387       139.1652      -10.52151       141.0702      -7.120964
+       142.4196      -10.12149       144.6861      -10.72709       143.6206
+      -5.819641       143.2766      -7.403305       153.0313      -15.67598
+        143.445      -10.07307       153.6923      -6.001732       146.1041
+      -6.572098       166.0415      -9.524879       143.7894              0
+       140.1192
+
+type = integer-attribute
+name = TAXIS_NUMS
+count = 8
+ 128 0 77002 -999 -999
+ -999 -999 -999
+
+type  = float-attribute
+name  = TAXIS_FLOATS
+count = 8
+              0              2              0              0              0
+        -999999        -999999        -999999
+
+type = integer-attribute
+name = DATASET_RANK
+count = 8
+ 3 128 0 0 0
+ 0 0 0
+
+type = integer-attribute
+name = DATASET_DIMENSIONS
+count = 5
+ 50 63 51 0 0
+
+type = integer-attribute
+name = BRICK_TYPES
+count = 128
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3
+
+type  = float-attribute
+name  = BRICK_FLOAT_FACS
+count = 128
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0
+
+type = string-attribute
+name = BRICK_LABS
+count = 2328
+'SERIE3.nii.gz[3]~SERIE3.nii.gz[4]~SERIE3.nii.gz[5]~SERIE3.nii.gz[6]~SERIE3.nii.gz[7]~SERIE3.nii.gz[8]~SERIE3.nii.gz[9]~SERIE3.nii.gz[10]~SERIE3.nii.gz[11]~SERIE3.nii.gz[12]~SERIE3.nii.gz[13]~SERIE3.nii.gz[14]~SERIE3.nii.gz[15]~SERIE3.nii.gz[16]~SERIE3.nii.gz[17]~SERIE3.nii.gz[18]~SERIE3.nii.gz[19]~SERIE3.nii.gz[20]~SERIE3.nii.gz[21]~SERIE3.nii.gz[22]~SERIE3.nii.gz[23]~SERIE3.nii.gz[24]~SERIE3.nii.gz[25]~SERIE3.nii.gz[26]~SERIE3.nii.gz[27]~SERIE3.nii.gz[28]~SERIE3.nii.gz[29]~SERIE3.nii.gz[30]~SERIE3.nii.gz[31]~SERIE3.nii.gz[32]~SERIE3.nii.gz[33]~SERIE3.nii.gz[34]~SERIE3.nii.gz[35]~SERIE3.nii.gz[36]~SERIE3.nii.gz[37]~SERIE3.nii.gz[38]~SERIE3.nii.gz[39]~SERIE3.nii.gz[40]~SERIE3.nii.gz[41]~SERIE3.nii.gz[42]~SERIE3.nii.gz[43]~SERIE3.nii.gz[44]~SERIE3.nii.gz[45]~SERIE3.nii.gz[46]~SERIE3.nii.gz[47]~SERIE3.nii.gz[48]~SERIE3.nii.gz[49]~SERIE3.nii.gz[50]~SERIE3.nii.gz[51]~SERIE3.nii.gz[52]~SERIE3.nii.gz[53]~SERIE3.nii.gz[54]~SERIE3.nii.gz[55]~SERIE3.nii.gz[56]~SERIE3.nii.gz[57]~SERIE3.nii.gz[58]~SERIE3.nii.gz[59]~SERIE3.nii.gz[60]~SERIE3.nii.gz[61]~SERIE3.nii.gz[62]~SERIE3.nii.gz[63]~SERIE3.nii.gz[64]~SERIE3.nii.gz[65]~SERIE3.nii.gz[66]~SERIE3.nii.gz[67]~SERIE3.nii.gz[68]~SERIE3.nii.gz[69]~SERIE3.nii.gz[70]~SERIE3.nii.gz[71]~SERIE3.nii.gz[72]~SERIE3.nii.gz[73]~SERIE3.nii.gz[74]~SERIE3.nii.gz[75]~SERIE3.nii.gz[76]~SERIE3.nii.gz[77]~SERIE3.nii.gz[78]~SERIE3.nii.gz[79]~SERIE3.nii.gz[80]~SERIE3.nii.gz[81]~SERIE3.nii.gz[82]~SERIE3.nii.gz[83]~SERIE3.nii.gz[84]~SERIE3.nii.gz[85]~SERIE3.nii.gz[86]~SERIE3.nii.gz[87]~SERIE3.nii.gz[88]~SERIE3.nii.gz[89]~SERIE3.nii.gz[90]~SERIE3.nii.gz[91]~SERIE3.nii.gz[92]~SERIE3.nii.gz[93]~SERIE3.nii.gz[94]~SERIE3.nii.gz[95]~SERIE3.nii.gz[96]~SERIE3.nii.gz[97]~SERIE3.nii.gz[98]~SERIE3.nii.gz[99]~SERIE3.nii.gz[100]~SERIE3.nii.gz[101]~SERIE3.nii.gz[102]~SERIE3.nii.gz[103]~SERIE3.nii.gz[104]~SERIE3.nii.gz[105]~SERIE3.nii.gz[106]~SERIE3.nii.gz[107]~SERIE3.nii.gz[108]~SERIE3.nii.gz[109]~SERIE3.nii.gz[110]~SERIE3.nii.gz[111]~SERIE3.nii.gz[112]~SERIE3.nii.gz[113]~SERIE3.nii.gz[114]~SERIE3.nii.gz[115]~SERIE3.nii.gz[116]~SERIE3.nii.gz[117]~SERIE3.nii.gz[118]~SERIE3.nii.gz[119]~SERIE3.nii.gz[120]~SERIE3.nii.gz[121]~SERIE3.nii.gz[122]~SERIE3.nii.gz[123]~SERIE3.nii.gz[124]~SERIE3.nii.gz[125]~SERIE3.nii.gz[126]~SERIE3.nii.gz[127]~SERIE3.nii.gz[128]~SERIE3.nii.gz[129]~SERIE3.nii.gz[130]~
+
+type = string-attribute
+name = BRICK_KEYWORDS
+count = 128
+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+type = string-attribute
+name = TEMPLATE_SPACE
+count = 4
+'MNI~
+
+type = integer-attribute
+name = INT_CMAP
+count = 1
+ 0
+
+type = string-attribute
+name = BYTEORDER_STRING
+count = 10
+'LSB_FIRST~
