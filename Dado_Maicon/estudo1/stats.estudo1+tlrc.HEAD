@@ -1,0 +1,555 @@
+
+type = string-attribute
+name = HISTORY_NOTE
+count = 6731
+'[nathalia@marfim: Sun Jun  7 12:11:58 2015] ===================================\n[nathalia@marfim: Sun Jun  7 12:11:58 2015] === History of inputs to 3dcalc ===\n[nathalia@marfim: Sun Jun  7 12:11:58 2015] === Input a:\n[nathalia@marfim: Sun Jun  7 12:11:58 2015] [nathalia@marfim: Sun Jun  7 12:11:52 2015] ===================================\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] === History of inputs to 3dcalc ===\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] === Input a:\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] [nathalia@marfim: Sun Jun  7 11:39:05 2015] 3dDespike -NEW -nomask -prefix pb01.estudo1.r01.despike pb00.estudo1.r01.tcat+orig\n[nathalia@marfim: Sun Jun  7 11:39:06 2015] 3dTshift -tzero 0 -quintic -prefix pb02.estudo1.r01.tshift -tpattern alt+z pb01.estudo1.r01.despike+orig\n[nathalia@marfim: Sun Jun  7 12:11:45 2015] 3dAllineate -base estudo1.ANAT_ns+tlrc -input pb02.estudo1.r01.tshift+orig -1Dmatrix_apply mat.r01.warp.aff12.1D -mast_dxyz 3 -prefix rm.epi.nomask.r01\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] === Input b:\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] [nathalia@marfim: Sun Jun  7 11:39:05 2015] 3dDespike -NEW -nomask -prefix pb01.estudo1.r01.despike pb00.estudo1.r01.tcat+orig\n[nathalia@marfim: Sun Jun  7 11:39:06 2015] 3dTshift -tzero 0 -quintic -prefix pb02.estudo1.r01.tshift -tpattern alt+z pb01.estudo1.r01.despike+orig\n[nathalia@marfim: Sun Jun  7 12:11:43 2015] 3dcalc -a pb02.estudo1.r01.tshift+orig -expr 1 -prefix rm.epi.all1\n[nathalia@marfim: Sun Jun  7 12:11:49 2015] 3dAllineate -base estudo1.ANAT_ns+tlrc -input rm.epi.all1+orig -1Dmatrix_apply mat.r01.warp.aff12.1D -mast_dxyz 3 -final NN -quiet -prefix rm.epi.1.r01\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] 3dTstat -min -prefix rm.epi.min.r01 rm.epi.1.r01+tlrc\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] 3dcopy rm.epi.min.r01+tlrc mask_epi_extents\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] ===================================\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] 3dcalc -a rm.epi.nomask.r01+tlrc -b mask_epi_extents+tlrc -expr 'a*b' -prefix pb03.estudo1.r01.volreg\n[nathalia@marfim: Sun Jun  7 12:11:55 2015] 3dmerge -1blur_fwhm 6 -doall -prefix pb04.estudo1.r01.blur pb03.estudo1.r01.volreg+tlrc\n[nathalia@marfim: Sun Jun  7 12:11:58 2015] === Input b:\n[nathalia@marfim: Sun Jun  7 12:11:58 2015] [nathalia@marfim: Sun Jun  7 12:11:52 2015] ===================================\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] === History of inputs to 3dcalc ===\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] === Input a:\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] [nathalia@marfim: Sun Jun  7 11:39:05 2015] 3dDespike -NEW -nomask -prefix pb01.estudo1.r01.despike pb00.estudo1.r01.tcat+orig\n[nathalia@marfim: Sun Jun  7 11:39:06 2015] 3dTshift -tzero 0 -quintic -prefix pb02.estudo1.r01.tshift -tpattern alt+z pb01.estudo1.r01.despike+orig\n[nathalia@marfim: Sun Jun  7 12:11:45 2015] 3dAllineate -base estudo1.ANAT_ns+tlrc -input pb02.estudo1.r01.tshift+orig -1Dmatrix_apply mat.r01.warp.aff12.1D -mast_dxyz 3 -prefix rm.epi.nomask.r01\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] === Input b:\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] [nathalia@marfim: Sun Jun  7 11:39:05 2015] 3dDespike -NEW -nomask -prefix pb01.estudo1.r01.despike pb00.estudo1.r01.tcat+orig\n[nathalia@marfim: Sun Jun  7 11:39:06 2015] 3dTshift -tzero 0 -quintic -prefix pb02.estudo1.r01.tshift -tpattern alt+z pb01.estudo1.r01.despike+orig\n[nathalia@marfim: Sun Jun  7 12:11:43 2015] 3dcalc -a pb02.estudo1.r01.tshift+orig -expr 1 -prefix rm.epi.all1\n[nathalia@marfim: Sun Jun  7 12:11:49 2015] 3dAllineate -base estudo1.ANAT_ns+tlrc -input rm.epi.all1+orig -1Dmatrix_apply mat.r01.warp.aff12.1D -mast_dxyz 3 -final NN -quiet -prefix rm.epi.1.r01\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] 3dTstat -min -prefix rm.epi.min.r01 rm.epi.1.r01+tlrc\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] 3dcopy rm.epi.min.r01+tlrc mask_epi_extents\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] ===================================\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] 3dcalc -a rm.epi.nomask.r01+tlrc -b mask_epi_extents+tlrc -expr 'a*b' -prefix pb03.estudo1.r01.volreg\n[nathalia@marfim: Sun Jun  7 12:11:55 2015] 3dmerge -1blur_fwhm 6 -doall -prefix pb04.estudo1.r01.blur pb03.estudo1.r01.volreg+tlrc\n[nathalia@marfim: Sun Jun  7 12:11:58 2015] 3dTstat -prefix rm.mean_r01 pb04.estudo1.r01.blur+tlrc\n[nathalia@marfim: Sun Jun  7 12:11:58 2015] === Input c:\n[nathalia@marfim: Sun Jun  7 12:11:58 2015] [nathalia@marfim: Sun Jun  7 11:39:05 2015] 3dDespike -NEW -nomask -prefix pb01.estudo1.r01.despike pb00.estudo1.r01.tcat+orig\n[nathalia@marfim: Sun Jun  7 11:39:06 2015] 3dTshift -tzero 0 -quintic -prefix pb02.estudo1.r01.tshift -tpattern alt+z pb01.estudo1.r01.despike+orig\n[nathalia@marfim: Sun Jun  7 12:11:43 2015] 3dcalc -a pb02.estudo1.r01.tshift+orig -expr 1 -prefix rm.epi.all1\n[nathalia@marfim: Sun Jun  7 12:11:49 2015] 3dAllineate -base estudo1.ANAT_ns+tlrc -input rm.epi.all1+orig -1Dmatrix_apply mat.r01.warp.aff12.1D -mast_dxyz 3 -final NN -quiet -prefix rm.epi.1.r01\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] 3dTstat -min -prefix rm.epi.min.r01 rm.epi.1.r01+tlrc\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] 3dcopy rm.epi.min.r01+tlrc mask_epi_extents\n[nathalia@marfim: Sun Jun  7 12:11:58 2015] ===================================\n[nathalia@marfim: Sun Jun  7 12:11:58 2015] 3dcalc -a pb04.estudo1.r01.blur+tlrc -b rm.mean_r01+tlrc -c mask_epi_extents+tlrc -expr 'c * min(200, a/b*100)*step(a)*step(b)' -prefix pb05.estudo1.r01.scale\n[nathalia@marfim: Sun Jun  7 12:12:05 2015] 3dDeconvolve -input pb05.estudo1.r01.scale+tlrc.HEAD -polort 2 -num_stimts 8 -stim_times 1 stimuli/stim_timing_MOT_L.txt 'BLOCK(20,1)' -stim_label 1 MOT_L -stim_times 2 stimuli/stim_timing_MOT_R.txt 'BLOCK(20,1)' -stim_label 2 MOT_R -stim_file 3 'motion_demean.1D[0]' -stim_base 3 -stim_label 3 roll -stim_file 4 'motion_demean.1D[1]' -stim_base 4 -stim_label 4 pitch -stim_file 5 'motion_demean.1D[2]' -stim_base 5 -stim_label 5 yaw -stim_file 6 'motion_demean.1D[3]' -stim_base 6 -stim_label 6 dS -stim_file 7 'motion_demean.1D[4]' -stim_base 7 -stim_label 7 dL -stim_file 8 'motion_demean.1D[5]' -stim_base 8 -stim_label 8 dP -jobs 6 -local_times -fout -tout -x1D X.xmat.1D -xjpeg X.jpg -fitts fitts.estudo1 -errts errts.estudo1 -bucket stats.estudo1\n[nathalia@marfim: Sun Jun  7 12:12:05 2015] Output prefix: stats.estudo1\n[nathalia@marfim: Sun Jun  7 12:13:21 2015] 3drefit -atrstring AFNI_CLUSTSIM_MASK file:ClustSim.mask -atrstring AFNI_CLUSTSIM_NN1 file:ClustSim.NN1.niml -atrstring AFNI_CLUSTSIM_NN2 file:ClustSim.NN2.niml -atrstring AFNI_CLUSTSIM_NN3 file:ClustSim.NN3.niml stats.estudo1+tlrc~
+
+type = string-attribute
+name = TYPESTRING
+count = 15
+'3DIM_HEAD_FUNC~
+
+type = string-attribute
+name = IDCODE_STRING
+count = 27
+'XYZ_6PGzNboHi0jvsOF7bGwuWw~
+
+type = string-attribute
+name = IDCODE_DATE
+count = 25
+'Sun Jun  7 12:12:05 2015~
+
+type = integer-attribute
+name = SCENE_DATA
+count = 8
+ 2 11 1 -999 -999
+ -999 -999 -999
+
+type = string-attribute
+name = LABEL_1
+count = 5
+'zyxt~
+
+type = string-attribute
+name = LABEL_2
+count = 5
+'zyxt~
+
+type = string-attribute
+name = DATASET_NAME
+count = 5
+'zyxt~
+
+type = integer-attribute
+name = ORIENT_SPECIFIC
+count = 3
+ 1 2 4
+
+type  = float-attribute
+name  = ORIGIN
+count = 3
+             72          107.5            -65
+
+type  = float-attribute
+name  = DELTA
+count = 3
+             -3             -3              3
+
+type  = float-attribute
+name  = IJK_TO_DICOM
+count = 12
+             -3              0              0             72              0
+             -3              0          107.5              0              0
+              3            -65
+
+type  = float-attribute
+name  = IJK_TO_DICOM_REAL
+count = 12
+             -3              0              0             72              0
+             -3              0          107.5              0              0
+              3            -65
+
+type  = float-attribute
+name  = BRICK_STATS
+count = 14
+              0       311.4438      -15.94317       9.107005      -6.739733
+       22.69376              0       515.0066       -36.6001       11.56325
+        -10.045       17.69048              0       312.9532
+
+type = integer-attribute
+name = DATASET_RANK
+count = 8
+ 3 7 0 0 0
+ 0 0 0
+
+type = integer-attribute
+name = DATASET_DIMENSIONS
+count = 5
+ 49 61 50 0 0
+
+type = integer-attribute
+name = BRICK_TYPES
+count = 7
+ 3 3 3 3 3
+ 3 3
+
+type  = float-attribute
+name  = BRICK_FLOAT_FACS
+count = 7
+              0              0              0              0              0
+              0              0
+
+type = string-attribute
+name = BRICK_LABS
+count = 89
+'Full_Fstat~MOT_L#0_Coef~MOT_L#0_Tstat~MOT_L_Fstat~MOT_R#0_Coef~MOT_R#0_Tstat~MOT_R_Fstat~
+
+type  = float-attribute
+name  = BRICK_STATAUX
+count = 23
+              0              4              2              2            117
+              2              3              1            117              3
+              4              2              1            117              5
+              3              1            117              6              4
+              2              1            117
+
+type = string-attribute
+name = BRICK_STATSYM
+count = 71
+'Ftest(2,117);none;Ttest(117);Ftest(1,117);none;Ttest(117);Ftest(1,117)~
+
+type  = float-attribute
+name  = FDRCURVE_000000
+count = 103
+   0.0001442659       1.404917       0.615773       1.220283       1.709003
+       2.132398       2.506338       2.845311       3.152829       3.437766
+       3.700733       3.946115       4.175798       4.391866       4.597591
+       4.792141        4.97734       5.155459       5.327331       5.488034
+       5.644565       5.795288       5.939983       6.080253       6.213741
+       6.344768       6.469544       6.591893       6.711034       6.827017
+       6.941074       7.051001       7.158776       7.262851       7.364022
+       7.463472       7.507469       7.509483       7.511497        7.51276
+        7.51276       7.512759       7.512759        7.51276        7.51276
+        7.51276       7.512759        7.51276        7.51276        7.51276
+        7.51276        7.51276        7.51276        7.51276        7.51276
+        7.51276        7.51276       7.512759        7.51276        7.51276
+        7.51276        7.51276        7.51276        7.51276       7.512759
+        7.51276       7.512759        7.51276       7.512759        7.51276
+       7.512759        7.51276        7.51276       7.512759        7.51276
+        7.51276       7.512759       7.512759        7.51276        7.51276
+        7.51276       7.512759        7.51276        7.51276       7.512759
+        7.51276       7.512759        7.51276        7.51276       7.512759
+        7.51276        7.51276       7.512759        7.51276        7.51276
+       7.512759        7.51276        7.51276       7.512759        7.51276
+        7.51276        7.51276        7.51276
+
+type  = float-attribute
+name  = FDRCURVE_000002
+count = 103
+    0.000143399      0.1218164      0.3697254      0.4060386      0.4457987
+      0.4898839      0.5396553      0.5918956      0.6483787      0.7091408
+      0.7753102      0.8433622      0.9152167      0.9908726       1.069101
+       1.149424        1.23251       1.317578       1.405069       1.495774
+       1.587504       1.683933       1.780892       1.878685       1.978488
+       2.080366       2.182059       2.286379       2.390286       2.496367
+       2.603658       2.711249        2.81687       2.925037       3.036602
+       3.145705       3.255767       3.362175       3.473286         3.5816
+       3.691298       3.802074       3.910878       4.016976       4.122516
+       4.226314       4.330413        4.43578       4.539339        4.63917
+       4.742188       4.843163       4.942857       5.045599       5.145919
+       5.246118       5.345451       5.444999       5.542128        5.63965
+       5.737508       5.834437       5.930472       6.024295       6.120526
+       6.215068       6.307464       6.397168       6.487811       6.577568
+       6.668639       6.759913       6.848057        6.93667       7.023621
+       7.109674       7.195896        7.28194       7.366751       7.391305
+       7.391306       7.391307       7.391308       7.391309       7.391311
+       7.391312       7.391313       7.391315       7.391315       7.391316
+       7.391318       7.391319       7.391321       7.391322       7.391323
+       7.391324       7.391325       7.391327       7.391328       7.391329
+        7.39133       7.391332       7.391418
+
+type  = float-attribute
+name  = FDRCURVE_000003
+count = 103
+   6.996351e-06       1.000202      0.3704685      0.7887211       1.038615
+       1.251311       1.442661       1.621814       1.791498       1.949798
+       2.103026       2.246227       2.385962       2.521584       2.651267
+       2.774804       2.894625       3.013584       3.127849       3.238851
+       3.343536       3.450488       3.551789         3.6494       3.748342
+       3.842787       3.934816       4.022316       4.107788       4.192241
+       4.272501        4.35226       4.432072       4.509885       4.584188
+       4.656117       4.729425       4.800003       4.868572        4.93683
+       5.005452       5.073017       5.138399       5.202957       5.267032
+       5.329319       5.390921        5.45235       5.511812       5.569715
+       5.627708       5.685081       5.742753       5.798693       5.853777
+       5.908508       5.962022         6.0144       6.066027       6.118781
+        6.17011       6.220925       6.269982       6.318791       6.364824
+       6.412104       6.458393       6.504581       6.549701       6.595185
+       6.640953       6.686742       6.731919       6.775466       6.818816
+       6.861114       6.902881       6.945255        6.98642        7.02703
+       7.067439       7.107074         7.1461       7.186152       7.225968
+       7.265081       7.302297       7.340178       7.378106         7.3913
+         7.3913       7.391301       7.391302       7.391302       7.391303
+       7.391304       7.391304       7.391304       7.391305       7.391305
+       7.391306       7.391307       7.391415
+
+type  = float-attribute
+name  = FDRCURVE_000005
+count = 103
+   0.0001457995      0.1131458      0.5444019      0.5832605      0.6267908
+      0.6740158      0.7261533      0.7817063      0.8397154      0.9017854
+      0.9657696       1.032342       1.102291       1.175793       1.250952
+        1.32847       1.408089       1.489925        1.57248       1.657417
+       1.742966       1.831155       1.920943       2.010493       2.101468
+       2.193554       2.285539       2.378433       2.472876       2.567741
+       2.662555       2.757991       2.852808       2.948518       3.043548
+       3.138949       3.233893       3.329674       3.423932        3.51715
+       3.611509       3.706351       3.799801       3.892879       3.984609
+       4.076865       4.168539       4.261193        4.35294        4.44426
+       4.535689        4.62626       4.716639       4.805977       4.895354
+       4.986459       5.075433       5.161616       5.249016       5.336203
+       5.425117       5.510804       5.598284       5.683692       5.769183
+       5.853647       5.935133       6.018447       6.100985       6.180263
+       6.260452        6.34317       6.421926       6.502384       6.582133
+        6.65992       6.737793       6.816535       6.895171       6.971985
+       7.049145       7.126523        7.20335       7.277999       7.353325
+       7.361338       7.361828       7.362319       7.362808       7.363299
+       7.363789       7.363971       7.363971       7.363971       7.363971
+       7.363971       7.363971       7.363971       7.363971       7.363971
+       7.363971       7.363971       7.363971
+
+type  = float-attribute
+name  = FDRCURVE_000006
+count = 103
+   7.145944e-06       2.342234      0.5454125        1.37011       1.842723
+       2.232408       2.572338       2.875921       3.151023        3.40371
+       3.635923       3.853128       4.055545       4.249156       4.430961
+       4.605642       4.771456       4.930897       5.084801       5.229064
+       5.369545       5.507261       5.639007       5.767931        5.88914
+       6.007277       6.122191       6.231082       6.340797       6.444314
+       6.548245       6.647849       6.744524       6.840203       6.934913
+       7.026793       7.116553       7.205034       7.290088        7.36103
+        7.36185       7.362671       7.363491       7.363975       7.363975
+       7.363975       7.363975       7.363975       7.363975       7.363975
+       7.363975       7.363975       7.363975       7.363975       7.363975
+       7.363975       7.363975       7.363975       7.363975       7.363975
+       7.363975       7.363975       7.363975       7.363975       7.363975
+       7.363975       7.363975       7.363975       7.363975       7.363975
+       7.363975       7.363975       7.363975       7.363975       7.363975
+       7.363975       7.363975       7.363975       7.363975       7.363975
+       7.363975       7.363975       7.363975       7.363975       7.363975
+       7.363975       7.363975       7.363975       7.363975       7.363975
+       7.363975       7.363975       7.363975       7.363975       7.363975
+       7.363975       7.363975       7.363975       7.363975       7.363975
+       7.363975       7.363975       7.363975
+
+type  = float-attribute
+name  = MDFCURVE_000000
+count = 74
+            -15      0.2005679      0.9990073      0.9736978       0.973028
+      0.9722197      0.9716365      0.9708749      0.9701464      0.9692675
+      0.9686217       0.967806      0.9669325      0.9659694      0.9651772
+      0.9639944      0.9626964      0.9614651      0.9602033      0.9587802
+      0.9569641      0.9552981      0.9538168      0.9520226      0.9498944
+      0.9478099      0.9457641      0.9436713      0.9412376      0.9389324
+      0.9366049      0.9337353      0.9309206      0.9277562       0.924714
+      0.9202784      0.9169126      0.9133173       0.909587      0.9049456
+      0.9005237      0.8950888      0.8894351      0.8835758      0.8767273
+      0.8695108      0.8621508      0.8540463      0.8452778      0.8355269
+      0.8243051         0.8126      0.7999721      0.7857885      0.7713727
+      0.7548259      0.7370093      0.7167864      0.6937404      0.6708352
+       0.642774       0.611517      0.5778359      0.5406743      0.4985088
+      0.4508863      0.3975565      0.3401775       0.274725      0.2080418
+      0.1386983     0.07388932     0.02387229              0
+
+type  = float-attribute
+name  = MDFCURVE_000002
+count = 74
+            -15      0.2011536      0.9990299      0.9774252      0.9769207
+      0.9766551      0.9763979      0.9757873      0.9752283       0.974561
+      0.9741609      0.9734901      0.9728829      0.9723302      0.9719619
+      0.9713728      0.9706014      0.9696678       0.968591      0.9673102
+      0.9661786      0.9654647      0.9646201      0.9638519       0.962579
+      0.9614168      0.9602795       0.959097      0.9579964      0.9562833
+      0.9547835      0.9529096       0.951255       0.949165      0.9472667
+      0.9450369      0.9424247      0.9402543      0.9376892      0.9341818
+      0.9305286      0.9267249      0.9219868       0.917318       0.912958
+      0.9080719      0.9022764      0.8952461      0.8889193      0.8817615
+      0.8743901      0.8669508      0.8592717      0.8489802      0.8380002
+      0.8268738      0.8120854      0.7964199      0.7793171      0.7595351
+      0.7350624      0.7067612      0.6749426       0.639071      0.5963735
+      0.5455052       0.489257      0.4247292      0.3497419      0.2737561
+      0.1880358      0.1029313     0.03241128              0
+
+type  = float-attribute
+name  = MDFCURVE_000003
+count = 74
+            -15      0.2011535      0.9990308      0.9774485      0.9769445
+      0.9766791      0.9764221      0.9758123      0.9752537      0.9745872
+      0.9741874      0.9735175      0.9729108      0.9723587      0.9719908
+      0.9714023      0.9706317       0.969699      0.9686235      0.9673439
+      0.9662134      0.9655002      0.9646567      0.9638892      0.9626175
+      0.9614566      0.9603206      0.9591391      0.9580398      0.9563285
+      0.9548301      0.9529582      0.9513052      0.9492174       0.947321
+      0.9450935      0.9424841       0.940316      0.9377534      0.9342497
+      0.9306003      0.9268004      0.9220672      0.9174031      0.9130478
+      0.9081666      0.9023771      0.8953542      0.8890338      0.8818833
+      0.8745196       0.867088      0.8594167      0.8491357      0.8381671
+       0.827052      0.8122786      0.7966291      0.7795436      0.7597815
+      0.7353333      0.7070605      0.6752714      0.6394334      0.5967735
+      0.5459483      0.4897442      0.4252589      0.3503125      0.2743437
+      0.1886193      0.1034505     0.03275943              0
+
+type  = float-attribute
+name  = MDFCURVE_000005
+count = 73
+            -15      0.2028102      0.9990044      0.9892029      0.9887164
+      0.9881927      0.9877772      0.9872633      0.9867052      0.9861881
+      0.9855117      0.9849859      0.9842493       0.983471      0.9825332
+      0.9816546      0.9805729      0.9797997      0.9785663       0.977244
+      0.9763193       0.974934      0.9731342      0.9713774      0.9699095
+      0.9682384      0.9663299      0.9639573      0.9619781      0.9601647
+      0.9578732      0.9554703      0.9529435      0.9505066      0.9472664
+      0.9440491      0.9404895      0.9359658      0.9317226      0.9277623
+      0.9230841      0.9178122       0.912098      0.9059593      0.8993939
+      0.8918057       0.883848      0.8748814      0.8655189      0.8549858
+      0.8432093      0.8296378      0.8154455       0.799386      0.7830431
+      0.7643731      0.7425025      0.7202824       0.694897      0.6665131
+      0.6351839      0.6014481      0.5625687      0.5203348      0.4723003
+      0.4193088      0.3596263      0.2932188      0.2236485      0.1539131
+     0.08438895     0.02685532              0
+
+type  = float-attribute
+name  = MDFCURVE_000006
+count = 73
+            -15      0.2028102      0.9990047      0.9892073      0.9887212
+      0.9881976      0.9877822      0.9872686      0.9867108      0.9861937
+      0.9855177      0.9849923      0.9842558       0.983478      0.9825405
+      0.9816622       0.980581       0.979808      0.9785752      0.9772536
+      0.9763292      0.9749444      0.9731454      0.9713893      0.9699221
+      0.9682516       0.966344      0.9639723      0.9619938      0.9601811
+      0.9578908      0.9554888       0.952963      0.9505271      0.9472884
+      0.9440724      0.9405142      0.9359924       0.931751      0.9277923
+      0.9231161      0.9178464      0.9121344      0.9059983      0.8994358
+      0.8918509      0.8838962      0.8749334      0.8655747       0.855046
+      0.8432744      0.8297082       0.815522      0.7994691      0.7831329
+      0.7644708      0.7426091      0.7203982      0.6950231      0.6666507
+      0.6353339      0.6016113      0.5627465      0.5205278      0.4725093
+      0.4195342      0.3598667       0.293472       0.223907      0.1541619
+      0.0846034     0.02699903              0
+
+type = string-attribute
+name = TEMPLATE_SPACE
+count = 4
+'MNI~
+
+type = integer-attribute
+name = INT_CMAP
+count = 1
+ 0
+
+type = string-attribute
+name = BYTEORDER_STRING
+count = 10
+'LSB_FIRST~
+
+type = string-attribute
+name = AFNI_CLUSTSIM_MASK
+count = 4041
+'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
+z3z097va/wJCHcj9===149450~
+
+type = string-attribute
+name = AFNI_CLUSTSIM_NN1
+count = 3106
+'<3dClustSim_NN1
+  ni_type="10*float"
+  ni_dimen="29"
+  commandline="3dClustSim -both -NN 123 -mask full_mask.estudo1+tlrc -fwhmxyz 9.65009 9.716 7.70425 -prefix ClustSim"
+  nxyz="49,61,50"
+  dxyz="3.000,3.000,3.000"
+  fwhmxyz="9.65,9.72,7.70"
+  iter="10000"
+  pthr="0.1,0.09,0.08,0.07,0.06,0.05,0.04,0.03,0.02,0.015,0.01,0.007,0.005,0.003,0.002,0.0015,0.001,0.0007,0.0005,0.0003,0.0002,0.00015,0.0001,7e-05,5e-05,3e-05,2e-05,1.5e-05,1e-05"
+  athr="0.1,0.09,0.08,0.07,0.06,0.05,0.04,0.03,0.02,0.01"
+  mask_dset_idcode="XYZ_5wX-2JzQDl4-PSCiy_qpvg"
+  mask_dset_name="./full_mask.estudo1+tlrc.HEAD"
+  mask_count="61217" >
+ 1287.8 1322.249 1356.333 1398.333 1445.666 1508.249 1590.499 1694.332 1856.332 2069
+ 974.2496 1004.5 1034.666 1071 1124.666 1167 1214.666 1274.666 1384 1554
+ 742.666 762.777 787.5993 814 846.6661 880.2493 921.3325 984.3322 1055.499 1205.33
+ 571.3327 589 605.8566 625.4274 647 673.666 707.2491 758.6656 811.3317 896
+ 433.3556 445.4433 457.2987 471.1105 488.6651 508.1992 531 561 610 686.4975
+ 330.6413 338 347 357.7133 369 381.2207 399.5528 423.7488 459 509
+ 248.3138 253.5765 260.3552 266.3315 274.2488 284.332 298.2491 316.541 339 381
+ 181.3434 185.4259 190.2115 195.5598 201.1243 208.3713 217.1798 226.7096 242.597 276
+ 126.6466 129.2271 132.2394 135.551 139.9152 144.7333 150.2701 157.4501 166.8978 184.594
+ 101.0935 103.2745 105.3445 108.0654 111.4311 115.3456 120.2114 126.5815 133.8978 149.1385
+ 76.03754 77.84347 80.01981 82.44522 85.18458 87.75652 91.16984 95.83799 103.196 113.5445
+ 60.58322 62.1024 63.87138 65.7338 67.81761 70.4772 73.18747 76.66071 81.9263 90.75787
+ 49.86934 51.21293 52.80072 54.44859 56.19996 58.26417 60.49021 63.39354 68.48886 75.18786
+ 38.05611 39.04289 40.16098 41.37127 42.93251 44.46023 46.33858 48.48523 51.8632 57.7189
+ 31.13183 31.86731 32.7215 33.72433 34.90957 36.38591 37.922 40.02694 43.22718 48
+ 26.818 27.62126 28.48754 29.35374 30.34762 31.69547 33.28573 35.18934 38 42.47509
+ 21.98013 22.61978 23.34865 24.18767 25.12941 26.43292 28 29.72475 31.77411 35.73775
+ 18.73836 19.29222 19.86995 20.56738 21.41635 22.41917 23.60534 25.18798 27.5509 31
+ 15.93039 16.48974 17.10865 17.75854 18.51194 19.3727 20.45709 21.83439 23.71208 27.1881
+ 12.46704 12.89516 13.40883 14 14.65483 15.46439 16.40561 17.52186 19.12797 21.9142
+ 10.29804 10.68094 11.10625 11.58457 12.14591 12.8507 13.71816 14.76719 16.37857 19.157
+ 8.840146 9.208155 9.627095 10.10228 10.66011 11.35874 12.2398 13.29644 14.60746 17
+ 7.203177 7.52247 7.877421 8.27739 8.736496 9.346759 10.17661 11.22209 12.48288 14.70106
+ 5.971006 6.247684 6.552146 6.895418 7.371839 7.967267 8.605677 9.516478 10.91328 12.94659
+ 4.854508 5.120656 5.454352 5.830585 6.225646 6.662379 7.255167 8.151246 9.339948 11.41324
+ 3.583367 3.816433 4.069631 4.338943 4.648153 5.017098 5.653105 6.426588 7.503221 9.239131
+ 2.706126 2.877029 3.088839 3.372791 3.698808 4.086669 4.578158 5.243712 6.245378 8.020411
+ 2.219228 2.383336 2.565771 2.771461 3.010628 3.398024 3.86964 4.48572 5.433273 7.068798
+ 1.644223 1.784037 1.939465 2.133853 2.368642 2.644845 2.981096 3.602302 4.44908 5.976588
+</3dClustSim_NN1>~
+
+type = string-attribute
+name = AFNI_CLUSTSIM_NN2
+count = 3058
+'<3dClustSim_NN2
+  ni_type="10*float"
+  ni_dimen="29"
+  commandline="3dClustSim -both -NN 123 -mask full_mask.estudo1+tlrc -fwhmxyz 9.65009 9.716 7.70425 -prefix ClustSim"
+  nxyz="49,61,50"
+  dxyz="3.000,3.000,3.000"
+  fwhmxyz="9.65,9.72,7.70"
+  iter="10000"
+  pthr="0.1,0.09,0.08,0.07,0.06,0.05,0.04,0.03,0.02,0.015,0.01,0.007,0.005,0.003,0.002,0.0015,0.001,0.0007,0.0005,0.0003,0.0002,0.00015,0.0001,7e-05,5e-05,3e-05,2e-05,1.5e-05,1e-05"
+  athr="0.1,0.09,0.08,0.07,0.06,0.05,0.04,0.03,0.02,0.01"
+  mask_dset_idcode="XYZ_5wX-2JzQDl4-PSCiy_qpvg"
+  mask_dset_name="./full_mask.estudo1+tlrc.HEAD"
+  mask_count="61217" >
+ 1658.571 1716 1764.5 1834.333 1894.333 1973 2074 2206 2362 2604
+ 1216.2 1250.666 1289 1340 1382.333 1451 1518.749 1616 1734 1954
+ 900.3994 931.4992 962 999 1028.666 1068.499 1116.799 1174 1279.332 1428
+ 669.1663 689.2496 709.6663 733.4996 762 797 836 886 946 1072
+ 495.3327 509.1245 524.3739 539.7994 560.5991 579.6653 608 652 703.4988 787
+ 367.0905 375.2296 386.8328 400 410.2494 428 450.199 474 515.4988 576
+ 269.1168 275.4268 282.6086 290.3737 301.3322 313.666 326.6227 343.3719 369.8313 417
+ 193.5483 197.8487 202.5964 208.5231 213.712 220.0579 228.3301 240.6645 259.4975 292
+ 131.0896 133.9419 137.1018 140.7125 145.6629 150.6142 156.2315 164.281 174.0746 194.495
+ 104.1715 106.1288 108.468 111.4009 115.1283 118.9678 123.5174 129.5941 137.6301 152.4334
+ 77.85709 79.84135 82.07778 84.4293 86.75921 89.32812 93.32842 98.29308 105.0978 115
+ 61.69545 63.27965 65.01792 67 69.12144 71.90363 74.40257 77.55595 83.5241 92.87069
+ 50.70285 52.12127 53.65795 55.30299 57.26626 59.32797 61.5077 64.21092 69.56751 76
+ 38.57292 39.56873 40.61541 41.88407 43.40053 45 46.89458 49.30181 53 58.4021
+ 31.37862 32.13147 32.95622 33.98892 35.16329 36.68783 38.14542 40.3907 43.4777 48.3132
+ 27.03203 27.87496 28.71504 29.55147 30.63078 31.95779 33.57335 35.47072 38.32004 42.72801
+ 22.11575 22.72947 23.46537 24.29588 25.21144 26.57255 28.09355 29.79676 31.81921 35.94994
+ 18.79507 19.33975 19.91959 20.63891 21.51333 22.50122 23.66832 25.32294 27.63692 31.1161
+ 15.97126 16.53774 17.15557 17.80281 18.57165 19.44135 20.55359 21.92504 23.8152 27.30636
+ 12.52517 12.97173 13.4893 14.07106 14.71352 15.51895 16.4747 17.66353 19.34035 22.07754
+ 10.35827 10.7521 11.17825 11.64157 12.18764 12.86434 13.73561 14.78125 16.39862 19.157
+ 8.87952 9.254839 9.683288 10.16209 10.70251 11.38885 12.25832 13.31668 14.632 17.03201
+ 7.237772 7.554008 7.90556 8.302869 8.759374 9.363911 10.17871 11.2358 12.51417 14.76424
+ 5.983046 6.260397 6.567461 6.913666 7.394361 7.987006 8.627322 9.537442 10.96417 12.97369
+ 4.878624 5.146946 5.478662 5.852661 6.247445 6.690594 7.297051 8.190615 9.3736 11.44015
+ 3.628479 3.85492 4.101578 4.371901 4.68227 5.066036 5.685461 6.452943 7.55465 9.277414
+ 2.744294 2.9165 3.136397 3.409145 3.722299 4.100099 4.595098 5.263768 6.2569 8.021103
+ 2.250795 2.415131 2.59782 2.803796 3.055124 3.435801 3.899236 4.504398 5.446623 7.08928
+ 1.66919 1.814423 1.975874 2.176341 2.409738 2.684305 3.027424 3.660683 4.490302 6
+</3dClustSim_NN2>~
+
+type = string-attribute
+name = AFNI_CLUSTSIM_NN3
+count = 3107
+'<3dClustSim_NN3
+  ni_type="10*float"
+  ni_dimen="29"
+  commandline="3dClustSim -both -NN 123 -mask full_mask.estudo1+tlrc -fwhmxyz 9.65009 9.716 7.70425 -prefix ClustSim"
+  nxyz="49,61,50"
+  dxyz="3.000,3.000,3.000"
+  fwhmxyz="9.65,9.72,7.70"
+  iter="10000"
+  pthr="0.1,0.09,0.08,0.07,0.06,0.05,0.04,0.03,0.02,0.015,0.01,0.007,0.005,0.003,0.002,0.0015,0.001,0.0007,0.0005,0.0003,0.0002,0.00015,0.0001,7e-05,5e-05,3e-05,2e-05,1.5e-05,1e-05"
+  athr="0.1,0.09,0.08,0.07,0.06,0.05,0.04,0.03,0.02,0.01"
+  mask_dset_idcode="XYZ_5wX-2JzQDl4-PSCiy_qpvg"
+  mask_dset_name="./full_mask.estudo1+tlrc.HEAD"
+  mask_count="61217" >
+ 1821.2 1872.5 1923.5 1999 2089 2180 2273 2383 2550 2840
+ 1312.666 1351.25 1386.25 1442.333 1506.666 1575.333 1659 1746.499 1902 2125
+ 973.5994 1005.499 1031.333 1068.099 1103 1141 1205 1279 1380.499 1542
+ 710.0995 728.1424 755.4997 780.3992 808.2494 844 888.3986 937 1007.748 1127.498
+ 520.5545 533.5994 551.4991 568.3619 587.0901 607 635 678.3322 732 826
+ 383.0905 394.1662 405.4982 415 431.2845 449.4269 466.4265 491.6656 534.3317 596
+ 276.5606 282.9495 289.7487 300.0708 310.3981 322.4976 334.8561 352.7488 382 438
+ 198.0621 202.6894 207.954 211.9577 217.7193 224.5681 233.1418 246.598 265.4963 297.495
+ 132.7685 135.5134 139.1359 142.5959 147.329 152.386 158.1228 165.7961 175.6617 197.6634
+ 105.0799 106.9816 109.5244 112.5613 116.476 120.2463 125 130.9458 139 154.1625
+ 78.43989 80.43553 82.62213 84.95219 87.19872 90.07819 94.13863 98.85942 105.7961 116.3656
+ 62.02892 63.56591 65.27885 67.2422 69.50606 72.19625 75.03329 78.19471 84.20841 93.13856
+ 50.85064 52.34162 53.86303 55.51302 57.47988 59.47766 61.66844 64.42549 69.72779 76.6157
+ 38.65213 39.65932 40.69199 41.95752 43.4569 45.05075 46.91714 49.35103 53.05647 58.48507
+ 31.44375 32.20393 33.04974 34.11009 35.31567 36.80019 38.26971 40.56379 43.57262 48.45004
+ 27.0642 27.91052 28.74337 29.58237 30.68454 32 33.64706 35.56428 38.50456 42.90422
+ 22.15686 22.77493 23.51833 24.34228 25.26494 26.61984 28.10706 29.83826 31.89374 36.04777
+ 18.81664 19.36185 19.94423 20.65392 21.52311 22.5114 23.69164 25.36462 27.68379 31.18786
+ 15.99037 16.55825 17.17265 17.81776 18.58322 19.44592 20.55359 21.92504 23.83766 27.34666
+ 12.52696 12.97184 13.49232 14.07705 14.72049 15.52285 16.48018 17.66754 19.34035 22.07754
+ 10.36366 10.75961 11.186 11.64802 12.19389 12.87178 13.74553 14.78331 16.40804 19.157
+ 8.88354 9.257654 9.684484 10.16209 10.70251 11.39249 12.26762 13.32427 14.632 17.03201
+ 7.242006 7.556485 7.906085 8.302869 8.759374 9.363911 10.17871 11.2358 12.51417 14.76424
+ 5.985896 6.262347 6.568601 6.913894 7.394361 7.987006 8.627322 9.54452 10.96465 12.97369
+ 4.880732 5.149486 5.480214 5.8531 6.247445 6.690594 7.297051 8.193195 9.380543 11.44015
+ 3.630303 3.855632 4.101578 4.371901 4.68227 5.066551 5.690799 6.456905 7.55465 9.277414
+ 2.746809 2.918598 3.138466 3.410561 3.722965 4.100099 4.595098 5.266757 6.268488 8.021103
+ 2.253057 2.41799 2.601342 2.808066 3.061499 3.439607 3.899916 4.504398 5.446623 7.09239
+ 1.671521 1.81726 1.979274 2.179521 2.412017 2.685524 3.027424 3.660683 4.490302 6
+</3dClustSim_NN3>~

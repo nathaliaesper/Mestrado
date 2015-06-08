@@ -1,0 +1,234 @@
+
+type = string-attribute
+name = HISTORY_NOTE
+count = 109
+'[nathalia@marfim: Sun Jun  7 12:12:08 2015] 3dTcat -prefix all_runs.estudo1 pb05.estudo1.r01.scale+tlrc.HEAD~
+
+type = string-attribute
+name = TYPESTRING
+count = 15
+'3DIM_HEAD_ANAT~
+
+type = string-attribute
+name = IDCODE_STRING
+count = 27
+'XYZ_WCcdcjn1S8ydEyX7FWP1mA~
+
+type = string-attribute
+name = IDCODE_DATE
+count = 25
+'Sun Jun  7 12:12:08 2015~
+
+type = integer-attribute
+name = SCENE_DATA
+count = 8
+ 2 2 0 -999 -999
+ -999 -999 -999
+
+type = string-attribute
+name = LABEL_1
+count = 5
+'zyxt~
+
+type = string-attribute
+name = LABEL_2
+count = 5
+'zyxt~
+
+type = string-attribute
+name = DATASET_NAME
+count = 5
+'zyxt~
+
+type = integer-attribute
+name = ORIENT_SPECIFIC
+count = 3
+ 1 2 4
+
+type  = float-attribute
+name  = ORIGIN
+count = 3
+             72          107.5            -65
+
+type  = float-attribute
+name  = DELTA
+count = 3
+             -3             -3              3
+
+type  = float-attribute
+name  = IJK_TO_DICOM
+count = 12
+             -3              0              0             72              0
+             -3              0          107.5              0              0
+              3            -65
+
+type  = float-attribute
+name  = IJK_TO_DICOM_REAL
+count = 12
+             -3              0              0             72              0
+             -3              0          107.5              0              0
+              3            -65
+
+type  = float-attribute
+name  = BRICK_STATS
+count = 256
+              0       127.8237              0         128.66              0
+       126.1718              0       126.1154              0       128.2409
+              0       126.9891              0       127.9269              0
+       127.8607              0       127.5324              0       131.3433
+              0       131.7865              0       129.2929              0
+       135.3367              0       129.8508              0       134.0565
+              0       133.4372              0       138.9989              0
+       122.8118              0       124.9651              0        146.769
+              0       123.3825              0       125.1884              0
+       122.9175              0       124.3739              0       125.1069
+              0        123.329              0       123.6782              0
+       123.8494              0       123.2213              0       124.2462
+              0       117.1548              0       119.2718              0
+       119.1011              0       140.9511              0       151.4889
+              0        123.332              0       131.9708              0
+       117.9769              0       137.0466              0       117.8875
+              0       122.1254              0       117.9941              0
+       116.6287              0         117.24              0       120.7377
+              0        122.844              0       120.6903              0
+       119.4435              0       120.1779              0       122.8707
+              0       121.3483              0       121.7194              0
+       116.9617              0       121.8147              0       120.7969
+              0        138.218              0       126.2646              0
+       118.1538              0       141.1719              0       120.4139
+              0       115.9823              0       117.6956              0
+       120.0976              0       122.1675              0       154.8538
+              0       121.0266              0       120.6877              0
+        122.355              0        117.466              0       119.9492
+              0       121.8486              0       124.5959              0
+       168.6448              0       139.0579              0       129.6019
+              0       125.4246              0       162.9385              0
+       174.1327              0       145.5525              0       187.1927
+              0       129.8927              0       125.6582              0
+       162.3166              0       164.1823              0       183.4613
+              0       135.7205              0       174.3136              0
+        134.608              0        134.608              0        169.407
+              0       120.0778              0       123.9593              0
+       129.2204              0       126.6243              0       126.6243
+              0       125.7213              0       144.9033              0
+       123.8332              0       129.6282              0       144.9033
+              0       161.0728              0       157.3414              0
+       133.1422              0       135.1643              0       181.5956
+              0       182.8394              0       127.2855              0
+       135.1643              0       127.2855              0       138.6843
+              0       133.4956              0       126.7433              0
+        134.294              0       136.4514              0       134.4913
+              0       135.1218              0       138.6084              0
+       138.6087              0       140.2267              0       139.9807
+              0       141.3054              0       151.7442              0
+       144.9033              0        152.988              0       143.6595
+              0       172.8889              0       139.6874              0
+       136.9907
+
+type = integer-attribute
+name = TAXIS_NUMS
+count = 8
+ 128 0 77002 -999 -999
+ -999 -999 -999
+
+type  = float-attribute
+name  = TAXIS_FLOATS
+count = 8
+              0              2              0              0              0
+        -999999        -999999        -999999
+
+type = integer-attribute
+name = DATASET_RANK
+count = 8
+ 3 128 0 0 0
+ 0 0 0
+
+type = integer-attribute
+name = DATASET_DIMENSIONS
+count = 5
+ 49 61 50 0 0
+
+type = integer-attribute
+name = BRICK_TYPES
+count = 128
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1
+
+type  = float-attribute
+name  = BRICK_FLOAT_FACS
+count = 128
+    0.003900988    0.003926512    0.003850575    0.003848853    0.003913721
+    0.003875518    0.003904138    0.003902118    0.003892098    0.004008401
+    0.004021929    0.003945827    0.004130274    0.003962852    0.004091206
+    0.004072305    0.004242038    0.003748034     0.00381375    0.004479172
+     0.00376545    0.003820563    0.003751258    0.003795706    0.003818076
+    0.003763818    0.003774475    0.003779698    0.003760529    0.003791808
+     0.00357539    0.003639998    0.003634789    0.004301617    0.004623216
+    0.003763909    0.004027553     0.00360048    0.004182459     0.00359775
+    0.003727084    0.003601004    0.003559334     0.00357799    0.003684735
+    0.003749016    0.003683287    0.003645238     0.00366765    0.003749829
+     0.00370337    0.003714696    0.003569498    0.003717603    0.003686542
+    0.004218206    0.003853406    0.003605879    0.004308356    0.003674854
+    0.003539606    0.003591895    0.003665199     0.00372837    0.004725906
+     0.00369355     0.00368321    0.003734092    0.003584886     0.00366067
+    0.003718638     0.00380248    0.005146788    0.004243839    0.003955258
+    0.003827772     0.00497264    0.005314271    0.004442045    0.005712842
+    0.003964132    0.003834901    0.004953661    0.005010599    0.005598965
+    0.004141987     0.00531979    0.004108036    0.004108036    0.005170048
+    0.003664596    0.003783052    0.003943614    0.003864386    0.003864386
+    0.003836827    0.004422233    0.003779204    0.003956058    0.004422233
+    0.004915701    0.004801824    0.004063301    0.004125012    0.005542026
+    0.005579985    0.003884563    0.004125012    0.003884563    0.004232438
+    0.004074086    0.003868018    0.004098454    0.004164292    0.004104473
+    0.004123715     0.00423012     0.00423013    0.004279509    0.004272002
+    0.004312429    0.004631008    0.004422233    0.004668967    0.004384274
+    0.005276313     0.00426305    0.004180752
+
+type = string-attribute
+name = BRICK_LABS
+count = 2712
+'estudo1.TAREFA.n[3]~estudo1.TAREFA.n[4]~estudo1.TAREFA.n[5]~estudo1.TAREFA.n[6]~estudo1.TAREFA.n[7]~estudo1.TAREFA.n[8]~estudo1.TAREFA.n[9]~estudo1.TAREFA.n[10]~estudo1.TAREFA.n[11]~estudo1.TAREFA.n[12]~estudo1.TAREFA.n[13]~estudo1.TAREFA.n[14]~estudo1.TAREFA.n[15]~estudo1.TAREFA.n[16]~estudo1.TAREFA.n[17]~estudo1.TAREFA.n[18]~estudo1.TAREFA.n[19]~estudo1.TAREFA.n[20]~estudo1.TAREFA.n[21]~estudo1.TAREFA.n[22]~estudo1.TAREFA.n[23]~estudo1.TAREFA.n[24]~estudo1.TAREFA.n[25]~estudo1.TAREFA.n[26]~estudo1.TAREFA.n[27]~estudo1.TAREFA.n[28]~estudo1.TAREFA.n[29]~estudo1.TAREFA.n[30]~estudo1.TAREFA.n[31]~estudo1.TAREFA.n[32]~estudo1.TAREFA.n[33]~estudo1.TAREFA.n[34]~estudo1.TAREFA.n[35]~estudo1.TAREFA.n[36]~estudo1.TAREFA.n[37]~estudo1.TAREFA.n[38]~estudo1.TAREFA.n[39]~estudo1.TAREFA.n[40]~estudo1.TAREFA.n[41]~estudo1.TAREFA.n[42]~estudo1.TAREFA.n[43]~estudo1.TAREFA.n[44]~estudo1.TAREFA.n[45]~estudo1.TAREFA.n[46]~estudo1.TAREFA.n[47]~estudo1.TAREFA.n[48]~estudo1.TAREFA.n[49]~estudo1.TAREFA.n[50]~estudo1.TAREFA.n[51]~estudo1.TAREFA.n[52]~estudo1.TAREFA.n[53]~estudo1.TAREFA.n[54]~estudo1.TAREFA.n[55]~estudo1.TAREFA.n[56]~estudo1.TAREFA.n[57]~estudo1.TAREFA.n[58]~estudo1.TAREFA.n[59]~estudo1.TAREFA.n[60]~estudo1.TAREFA.n[61]~estudo1.TAREFA.n[62]~estudo1.TAREFA.n[63]~estudo1.TAREFA.n[64]~estudo1.TAREFA.n[65]~estudo1.TAREFA.n[66]~estudo1.TAREFA.n[67]~estudo1.TAREFA.n[68]~estudo1.TAREFA.n[69]~estudo1.TAREFA.n[70]~estudo1.TAREFA.n[71]~estudo1.TAREFA.n[72]~estudo1.TAREFA.n[73]~estudo1.TAREFA.n[74]~estudo1.TAREFA.n[75]~estudo1.TAREFA.n[76]~estudo1.TAREFA.n[77]~estudo1.TAREFA.n[78]~estudo1.TAREFA.n[79]~estudo1.TAREFA.n[80]~estudo1.TAREFA.n[81]~estudo1.TAREFA.n[82]~estudo1.TAREFA.n[83]~estudo1.TAREFA.n[84]~estudo1.TAREFA.n[85]~estudo1.TAREFA.n[86]~estudo1.TAREFA.n[87]~estudo1.TAREFA.n[88]~estudo1.TAREFA.n[89]~estudo1.TAREFA.n[90]~estudo1.TAREFA.n[91]~estudo1.TAREFA.n[92]~estudo1.TAREFA.n[93]~estudo1.TAREFA.n[94]~estudo1.TAREFA.n[95]~estudo1.TAREFA.n[96]~estudo1.TAREFA.n[97]~estudo1.TAREFA.n[98]~estudo1.TAREFA.n[99]~estudo1.TAREFA.n[100]~estudo1.TAREFA.n[101]~estudo1.TAREFA.n[102]~estudo1.TAREFA.n[103]~estudo1.TAREFA.n[104]~estudo1.TAREFA.n[105]~estudo1.TAREFA.n[106]~estudo1.TAREFA.n[107]~estudo1.TAREFA.n[108]~estudo1.TAREFA.n[109]~estudo1.TAREFA.n[110]~estudo1.TAREFA.n[111]~estudo1.TAREFA.n[112]~estudo1.TAREFA.n[113]~estudo1.TAREFA.n[114]~estudo1.TAREFA.n[115]~estudo1.TAREFA.n[116]~estudo1.TAREFA.n[117]~estudo1.TAREFA.n[118]~estudo1.TAREFA.n[119]~estudo1.TAREFA.n[120]~estudo1.TAREFA.n[121]~estudo1.TAREFA.n[122]~estudo1.TAREFA.n[123]~estudo1.TAREFA.n[124]~estudo1.TAREFA.n[125]~estudo1.TAREFA.n[126]~estudo1.TAREFA.n[127]~estudo1.TAREFA.n[128]~estudo1.TAREFA.n[129]~estudo1.TAREFA.n[130]~
+
+type = string-attribute
+name = BRICK_KEYWORDS
+count = 128
+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+type = string-attribute
+name = TEMPLATE_SPACE
+count = 4
+'MNI~
+
+type = integer-attribute
+name = INT_CMAP
+count = 1
+ 0
+
+type = string-attribute
+name = BYTEORDER_STRING
+count = 10
+'LSB_FIRST~

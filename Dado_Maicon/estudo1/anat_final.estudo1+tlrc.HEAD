@@ -1,0 +1,171 @@
+
+type = string-attribute
+name = HISTORY_NOTE
+count = 5206
+'[nathalia@marfim: Sun Jun  7 12:11:40 2015] ===================================\n[nathalia@marfim: Sun Jun  7 12:11:40 2015] === History of inputs to 3dcalc ===\n[nathalia@marfim: Sun Jun  7 12:11:40 2015] === Input a:\n[nathalia@marfim: Sun Jun  7 12:11:40 2015] [nathalia@marfim: Sun Jun  7 12:10:18 2015] ===================================\n[nathalia@marfim: Sun Jun  7 12:10:18 2015] === History of inputs to 3dcalc ===\n[nathalia@marfim: Sun Jun  7 12:10:18 2015] === Input a:\n[nathalia@marfim: Sun Jun  7 12:10:18 2015] [nathalia@marfim: Sun Jun  7 11:40:37 2015] 3dSkullStrip -orig_vol -shrink_fac_bot_lim 0.8 -no_pushout -input ./__tt_estudo1.ANAT+orig -prefix ./__tt_estudo1.ANAT_ns\n[nathalia@marfim: Sun Jun  7 12:10:07 2015] 3dcopy ./__tt_estudo1.ANAT_ns+orig estudo1.ANAT_ns\n[nathalia@marfim: Sun Jun  7 12:10:12 2015] 3dresample -rmode Cu -master __ats_tmp__ref_MNI_caez_N27_40pad+tlrc -inset estudo1.ANAT_ns+orig -prefix ./__ats_tmp__resamp_edge_art\n[nathalia@marfim: Sun Jun  7 12:10:18 2015] === Input b:\n[nathalia@marfim: Sun Jun  7 12:10:18 2015] [nathalia@marfim: Sun Jun  7 11:40:37 2015] 3dSkullStrip -orig_vol -shrink_fac_bot_lim 0.8 -no_pushout -input ./__tt_estudo1.ANAT+orig -prefix ./__tt_estudo1.ANAT_ns\n[nathalia@marfim: Sun Jun  7 12:10:07 2015] 3dcopy ./__tt_estudo1.ANAT_ns+orig estudo1.ANAT_ns\n[nathalia@marfim: Sun Jun  7 12:10:12 2015] 3dcalc -a estudo1.ANAT_ns+orig -expr 'step(a)*10000' -prefix ./__ats_tmp__resamp_step\n[nathalia@marfim: Sun Jun  7 12:10:18 2015] 3dresample -rmode Linear -master __ats_tmp__ref_MNI_caez_N27_40pad+tlrc -inset __ats_tmp__resamp_step+orig -prefix ./__ats_tmp__resamp_NN\n[nathalia@marfim: Sun Jun  7 12:10:18 2015] ===================================\n[nathalia@marfim: Sun Jun  7 12:10:18 2015] 3dcalc -a __ats_tmp__resamp_edge_art+tlrc. -b __ats_tmp__resamp_NN+tlrc. -expr 'a*step(b-5000)' -prefix ./__ats_tmp__resamp\n[nathalia@marfim: Sun Jun  7 12:10:21 2015] 3dcalc -a __ats_tmp__resamp+tlrc -expr 'a*step(a--0.000100)*step(7097.000100-a) + 0*step(0-a) + 7097*step(a-7097)' -prefix __ats_tmp___rs_estudo1.ANAT_ns\n[nathalia@marfim: Sun Jun  7 12:10:25 2015] 3drefit -view +orig __ats_tmp___rs_estudo1.ANAT_ns+tlrc.HEAD\n[nathalia@marfim: Sun Jun  7 12:11:38 2015] 3dcalc -a __ats_tmp___rs_estudo1.ANAT_ns+orig -expr 'step(a)*10000' -prefix ./__ats_tmp__reg_braintlrcstep\n[nathalia@marfim: Sun Jun  7 12:11:40 2015] 3dWarp -matparent __ats_tmp__reg_warpdriveout+orig -gridset __ats_tmp___pad40_estudo1.ANAT_ns+orig -linear -prefix ./__ats_tmp__reg_braintlrcmask __ats_tmp__reg_braintlrcstep+orig\n[nathalia@marfim: Sun Jun  7 12:11:40 2015] === Input b:\n[nathalia@marfim: Sun Jun  7 12:11:40 2015] [nathalia@marfim: Sun Jun  7 11:40:37 2015] 3dSkullStrip -orig_vol -shrink_fac_bot_lim 0.8 -no_pushout -input ./__tt_estudo1.ANAT+orig -prefix ./__tt_estudo1.ANAT_ns\n[nathalia@marfim: Sun Jun  7 12:10:07 2015] 3dcopy ./__tt_estudo1.ANAT_ns+orig estudo1.ANAT_ns\n[nathalia@marfim: Sun Jun  7 12:11:38 2015] 3dWarp -matvec_out2in estudo1.ANAT_ns.Xat.1D -linear -prefix ./__ats_tmp___pad40_estudo1.ANAT_ns -gridset __ats_tmp__gridout+orig estudo1.ANAT_ns+orig\n[nathalia@marfim: Sun Jun  7 12:11:40 2015] ===================================\n[nathalia@marfim: Sun Jun  7 12:11:40 2015] 3dcalc -a __ats_tmp__reg_braintlrcmask+orig -b __ats_tmp___pad40_estudo1.ANAT_ns.skl+orig -expr 'step(a-5000)*b' -prefix ./__ats_tmp___pad40_estudo1.ANAT_ns+orig\n[nathalia@marfim: Sun Jun  7 12:11:40 2015] 3drefit -atrcopy __ats_tmp___pad40_estudo1.ANAT_ns.skl+orig WARPDRIVE_MATVEC_FOR_000000 __ats_tmp___pad40_estudo1.ANAT_ns+orig\n[nathalia@marfim: Sun Jun  7 12:11:40 2015] 3drefit -atrcopy __ats_tmp___pad40_estudo1.ANAT_ns.skl+orig WARPDRIVE_MATVEC_FOR_000000 __ats_tmp___pad40_estudo1.ANAT_ns+orig\n[nathalia@marfim: Sun Jun  7 12:11:40 2015] 3drefit -atrcopy __ats_tmp___pad40_estudo1.ANAT_ns.skl+orig WARPDRIVE_MATVEC_INV_000000 __ats_tmp___pad40_estudo1.ANAT_ns+orig\n[nathalia@marfim: Sun Jun  7 12:11:41 2015] 3dZeropad -I -40 -S -40 -A -40 -P -40 -L -40 -R -40 -mm -prefix ./__ats_tmp___upad40_estudo1.ANAT_ns __ats_tmp___pad40_estudo1.ANAT_ns+orig\n[nathalia@marfim: Sun Jun  7 12:11:41 2015] 3drefit -atrcopy __ats_tmp___pad40_estudo1.ANAT_ns+orig WARPDRIVE_MATVEC_FOR_000000 __ats_tmp___upad40_estudo1.ANAT_ns+orig\n[nathalia@marfim: Sun Jun  7 12:11:41 2015] 3drefit -atrcopy __ats_tmp___pad40_estudo1.ANAT_ns+orig WARPDRIVE_MATVEC_FOR_000000 __ats_tmp___upad40_estudo1.ANAT_ns+orig\n[nathalia@marfim: Sun Jun  7 12:11:41 2015] 3drefit -atrcopy __ats_tmp___pad40_estudo1.ANAT_ns+orig WARPDRIVE_MATVEC_INV_000000 __ats_tmp___upad40_estudo1.ANAT_ns+orig\n[nathalia@marfim: Sun Jun  7 12:11:41 2015] 3drefit -space MNI __ats_tmp___upad40_estudo1.ANAT_ns+orig\n[nathalia@marfim: Sun Jun  7 12:11:41 2015] Dataset created via: @auto_tlrc -base MNI_caez_N27+tlrc -input estudo1.ANAT_ns+orig -no_ss -dxyz 3\n[nathalia@marfim: Sun Jun  7 12:11:41 2015] 3drefit -view +tlrc __ats_tmp___upad40_estudo1.ANAT_ns+orig.HEAD\n[nathalia@marfim: Sun Jun  7 12:11:41 2015] 3drefit -wset estudo1.ANAT_ns+orig __ats_tmp___upad40_estudo1.ANAT_ns+tlrc\n[nathalia@marfim: Sun Jun  7 12:11:55 2015] 3dcopy estudo1.ANAT_ns+tlrc anat_final.estudo1~
+
+type = string-attribute
+name = TYPESTRING
+count = 15
+'3DIM_HEAD_ANAT~
+
+type = string-attribute
+name = IDCODE_STRING
+count = 27
+'XYZ_DrWaD_Ure7gRiKBZoNBDdQ~
+
+type = string-attribute
+name = IDCODE_DATE
+count = 25
+'Sun Jun  7 12:11:55 2015~
+
+type = integer-attribute
+name = SCENE_DATA
+count = 8
+ 2 2 0 -999 -999
+ -999 -999 -999
+
+type = string-attribute
+name = LABEL_1
+count = 5
+'zyxt~
+
+type = string-attribute
+name = LABEL_2
+count = 5
+'zyxt~
+
+type = string-attribute
+name = DATASET_NAME
+count = 5
+'zyxt~
+
+type = integer-attribute
+name = ORIENT_SPECIFIC
+count = 3
+ 1 2 4
+
+type  = float-attribute
+name  = ORIGIN
+count = 3
+             72          107.5            -65
+
+type  = float-attribute
+name  = DELTA
+count = 3
+             -3             -3              3
+
+type  = float-attribute
+name  = IJK_TO_DICOM
+count = 12
+             -3              0              0             72              0
+             -3              0          107.5              0              0
+              3            -65
+
+type  = float-attribute
+name  = IJK_TO_DICOM_REAL
+count = 12
+             -3              0              0             72              0
+             -3              0          107.5              0              0
+              3            -65
+
+type  = float-attribute
+name  = BRICK_STATS
+count = 2
+              0           5213
+
+type = integer-attribute
+name = DATASET_RANK
+count = 8
+ 3 1 0 0 0
+ 0 0 0
+
+type = integer-attribute
+name = DATASET_DIMENSIONS
+count = 5
+ 49 61 50 0 0
+
+type = integer-attribute
+name = BRICK_TYPES
+count = 1
+ 1
+
+type  = float-attribute
+name  = BRICK_FLOAT_FACS
+count = 1
+              0
+
+type = string-attribute
+name = BRICK_LABS
+count = 3
+'#0~
+
+type = string-attribute
+name = BRICK_KEYWORDS
+count = 1
+'~
+
+type = string-attribute
+name = TEMPLATE_SPACE
+count = 4
+'MNI~
+
+type = integer-attribute
+name = INT_CMAP
+count = 1
+ 0
+
+type = string-attribute
+name = BYTEORDER_STRING
+count = 10
+'LSB_FIRST~
+
+type  = float-attribute
+name  = WARPDRIVE_MATVEC_FOR_000000
+count = 12
+       0.932774      0.0777517     -0.0275839      0.0903817      -0.123662
+       0.947411       0.256292       -36.1024      0.0273487      -0.357603
+       0.843494       -18.4758
+
+type  = float-attribute
+name  = WARPDRIVE_MATVEC_INV_000000
+count = 12
+       1.061658    -0.06640707     0.05489577      -1.479166      0.1326704
+      0.9386109     -0.2808543       28.68511     0.02182396      0.4000813
+       1.064695       34.11303
+
+type = integer-attribute
+name = NOTES_COUNT
+count = 1
+ 1
+
+type = string-attribute
+name = NOTE_NUMBER_001
+count = 99
+'Dataset created via: @auto_tlrc -base MNI_caez_N27+tlrc -input estudo1.ANAT_ns+orig -no_ss -dxyz 3~
+
+type = string-attribute
+name = NOTE_DATE_001
+count = 25
+'Sun Jun  7 12:11:41 2015~
+
+type = string-attribute
+name = IDCODE_WARP_PARENT
+count = 27
+'XYZ_p-vNCT7kaztJx6ykFNY0gA~
+
+type = integer-attribute
+name = WARP_TYPE
+count = 8
+ 0 0 -999 -999 -999
+ -999 -999 -999
+
+type  = float-attribute
+name  = WARP_DATA
+count = 30
+       1.061658    -0.06640707     0.05489577      0.1326704      0.9386109
+     -0.2808543     0.02182396      0.4000813       1.064695      0.9327736
+     0.07775167     -0.0275839      -0.123662      0.9474109      0.2562922
+      0.0273487     -0.3576031      0.8434944       1.479166      -28.68511
+      -34.11303    -0.09038213       36.10241       18.47581           -160
+           -160           -130            160            220            170

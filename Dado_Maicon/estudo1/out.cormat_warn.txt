@@ -1,0 +1,13 @@
+
+Warnings regarding Correlation Matrix: X.xmat.1D
+
+  severity   correlation   cosine  regressor pair
+  --------   -----------   ------  ----------------------------------------
+  medium:      -0.490      -0.420  ( 3 vs.  6)     MOT_L#0  vs.  pitch#0
+  medium:       0.474       0.406  ( 3 vs. 10)     MOT_L#0  vs.  dP#0
+  medium:       0.453       0.388  ( 4 vs.  8)     MOT_R#0  vs.  dS#0
+  medium:      -0.436      -0.373  ( 1 vs.  3)  Run#1Pol#1  vs.  MOT_L#0
+  medium:      -0.431      -0.369  ( 3 vs.  7)     MOT_L#0  vs.  yaw#0
+  medium:       0.403       0.345  ( 4 vs.  6)     MOT_R#0  vs.  pitch#0
+  medium:       0.403       0.345  ( 1 vs.  4)  Run#1Pol#1  vs.  MOT_R#0
+

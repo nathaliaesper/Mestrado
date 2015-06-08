@@ -1,0 +1,33 @@
+
+subject ID                : estudo1
+TRs removed (per run)     : 3
+num stim classes provided : 2
+final anatomy dset        : anat_final.estudo1+tlrc.HEAD
+final stats dset          : stats.estudo1+tlrc.HEAD
+final voxel resolution    : 3.000000	3.000000	3.000000
+
+motion limit              : 0.3
+num TRs above mot limit   : 0
+average motion (per TR)   : 0.0516755
+max motion displacement   : 1.0354
+outlier limit             : 0.1
+average outlier frac (TR) : 0.00185688
+num TRs above out limit   : 0
+
+num runs found            : 1
+num TRs per run           : 128
+TRs total                 : 128
+degrees of freedom used   : 11
+degrees of freedom left   : 117
+
+num regs of interest      : 2
+num TRs per stim          : 51 51
+ave mot per sresp         : 0.050717 0.057374
+
+TSNR average              : 345.379
+global correlation (GCOR) : 0.115072
+anat/EPI mask correlation : 0.757192
+maximum F-stat (masked)   : 311.444
+blur estimates            : 9.65009 9.716 7.70425
+
+

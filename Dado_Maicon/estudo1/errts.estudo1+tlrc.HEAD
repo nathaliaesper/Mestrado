@@ -1,0 +1,234 @@
+
+type = string-attribute
+name = HISTORY_NOTE
+count = 6411
+'[nathalia@marfim: Sun Jun  7 12:11:58 2015] ===================================\n[nathalia@marfim: Sun Jun  7 12:11:58 2015] === History of inputs to 3dcalc ===\n[nathalia@marfim: Sun Jun  7 12:11:58 2015] === Input a:\n[nathalia@marfim: Sun Jun  7 12:11:58 2015] [nathalia@marfim: Sun Jun  7 12:11:52 2015] ===================================\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] === History of inputs to 3dcalc ===\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] === Input a:\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] [nathalia@marfim: Sun Jun  7 11:39:05 2015] 3dDespike -NEW -nomask -prefix pb01.estudo1.r01.despike pb00.estudo1.r01.tcat+orig\n[nathalia@marfim: Sun Jun  7 11:39:06 2015] 3dTshift -tzero 0 -quintic -prefix pb02.estudo1.r01.tshift -tpattern alt+z pb01.estudo1.r01.despike+orig\n[nathalia@marfim: Sun Jun  7 12:11:45 2015] 3dAllineate -base estudo1.ANAT_ns+tlrc -input pb02.estudo1.r01.tshift+orig -1Dmatrix_apply mat.r01.warp.aff12.1D -mast_dxyz 3 -prefix rm.epi.nomask.r01\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] === Input b:\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] [nathalia@marfim: Sun Jun  7 11:39:05 2015] 3dDespike -NEW -nomask -prefix pb01.estudo1.r01.despike pb00.estudo1.r01.tcat+orig\n[nathalia@marfim: Sun Jun  7 11:39:06 2015] 3dTshift -tzero 0 -quintic -prefix pb02.estudo1.r01.tshift -tpattern alt+z pb01.estudo1.r01.despike+orig\n[nathalia@marfim: Sun Jun  7 12:11:43 2015] 3dcalc -a pb02.estudo1.r01.tshift+orig -expr 1 -prefix rm.epi.all1\n[nathalia@marfim: Sun Jun  7 12:11:49 2015] 3dAllineate -base estudo1.ANAT_ns+tlrc -input rm.epi.all1+orig -1Dmatrix_apply mat.r01.warp.aff12.1D -mast_dxyz 3 -final NN -quiet -prefix rm.epi.1.r01\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] 3dTstat -min -prefix rm.epi.min.r01 rm.epi.1.r01+tlrc\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] 3dcopy rm.epi.min.r01+tlrc mask_epi_extents\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] ===================================\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] 3dcalc -a rm.epi.nomask.r01+tlrc -b mask_epi_extents+tlrc -expr 'a*b' -prefix pb03.estudo1.r01.volreg\n[nathalia@marfim: Sun Jun  7 12:11:55 2015] 3dmerge -1blur_fwhm 6 -doall -prefix pb04.estudo1.r01.blur pb03.estudo1.r01.volreg+tlrc\n[nathalia@marfim: Sun Jun  7 12:11:58 2015] === Input b:\n[nathalia@marfim: Sun Jun  7 12:11:58 2015] [nathalia@marfim: Sun Jun  7 12:11:52 2015] ===================================\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] === History of inputs to 3dcalc ===\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] === Input a:\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] [nathalia@marfim: Sun Jun  7 11:39:05 2015] 3dDespike -NEW -nomask -prefix pb01.estudo1.r01.despike pb00.estudo1.r01.tcat+orig\n[nathalia@marfim: Sun Jun  7 11:39:06 2015] 3dTshift -tzero 0 -quintic -prefix pb02.estudo1.r01.tshift -tpattern alt+z pb01.estudo1.r01.despike+orig\n[nathalia@marfim: Sun Jun  7 12:11:45 2015] 3dAllineate -base estudo1.ANAT_ns+tlrc -input pb02.estudo1.r01.tshift+orig -1Dmatrix_apply mat.r01.warp.aff12.1D -mast_dxyz 3 -prefix rm.epi.nomask.r01\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] === Input b:\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] [nathalia@marfim: Sun Jun  7 11:39:05 2015] 3dDespike -NEW -nomask -prefix pb01.estudo1.r01.despike pb00.estudo1.r01.tcat+orig\n[nathalia@marfim: Sun Jun  7 11:39:06 2015] 3dTshift -tzero 0 -quintic -prefix pb02.estudo1.r01.tshift -tpattern alt+z pb01.estudo1.r01.despike+orig\n[nathalia@marfim: Sun Jun  7 12:11:43 2015] 3dcalc -a pb02.estudo1.r01.tshift+orig -expr 1 -prefix rm.epi.all1\n[nathalia@marfim: Sun Jun  7 12:11:49 2015] 3dAllineate -base estudo1.ANAT_ns+tlrc -input rm.epi.all1+orig -1Dmatrix_apply mat.r01.warp.aff12.1D -mast_dxyz 3 -final NN -quiet -prefix rm.epi.1.r01\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] 3dTstat -min -prefix rm.epi.min.r01 rm.epi.1.r01+tlrc\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] 3dcopy rm.epi.min.r01+tlrc mask_epi_extents\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] ===================================\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] 3dcalc -a rm.epi.nomask.r01+tlrc -b mask_epi_extents+tlrc -expr 'a*b' -prefix pb03.estudo1.r01.volreg\n[nathalia@marfim: Sun Jun  7 12:11:55 2015] 3dmerge -1blur_fwhm 6 -doall -prefix pb04.estudo1.r01.blur pb03.estudo1.r01.volreg+tlrc\n[nathalia@marfim: Sun Jun  7 12:11:58 2015] 3dTstat -prefix rm.mean_r01 pb04.estudo1.r01.blur+tlrc\n[nathalia@marfim: Sun Jun  7 12:11:58 2015] === Input c:\n[nathalia@marfim: Sun Jun  7 12:11:58 2015] [nathalia@marfim: Sun Jun  7 11:39:05 2015] 3dDespike -NEW -nomask -prefix pb01.estudo1.r01.despike pb00.estudo1.r01.tcat+orig\n[nathalia@marfim: Sun Jun  7 11:39:06 2015] 3dTshift -tzero 0 -quintic -prefix pb02.estudo1.r01.tshift -tpattern alt+z pb01.estudo1.r01.despike+orig\n[nathalia@marfim: Sun Jun  7 12:11:43 2015] 3dcalc -a pb02.estudo1.r01.tshift+orig -expr 1 -prefix rm.epi.all1\n[nathalia@marfim: Sun Jun  7 12:11:49 2015] 3dAllineate -base estudo1.ANAT_ns+tlrc -input rm.epi.all1+orig -1Dmatrix_apply mat.r01.warp.aff12.1D -mast_dxyz 3 -final NN -quiet -prefix rm.epi.1.r01\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] 3dTstat -min -prefix rm.epi.min.r01 rm.epi.1.r01+tlrc\n[nathalia@marfim: Sun Jun  7 12:11:52 2015] 3dcopy rm.epi.min.r01+tlrc mask_epi_extents\n[nathalia@marfim: Sun Jun  7 12:11:58 2015] ===================================\n[nathalia@marfim: Sun Jun  7 12:11:58 2015] 3dcalc -a pb04.estudo1.r01.blur+tlrc -b rm.mean_r01+tlrc -c mask_epi_extents+tlrc -expr 'c * min(200, a/b*100)*step(a)*step(b)' -prefix pb05.estudo1.r01.scale\n[nathalia@marfim: Sun Jun  7 12:12:07 2015] 3dDeconvolve -input pb05.estudo1.r01.scale+tlrc.HEAD -polort 2 -num_stimts 8 -stim_times 1 stimuli/stim_timing_MOT_L.txt 'BLOCK(20,1)' -stim_label 1 MOT_L -stim_times 2 stimuli/stim_timing_MOT_R.txt 'BLOCK(20,1)' -stim_label 2 MOT_R -stim_file 3 'motion_demean.1D[0]' -stim_base 3 -stim_label 3 roll -stim_file 4 'motion_demean.1D[1]' -stim_base 4 -stim_label 4 pitch -stim_file 5 'motion_demean.1D[2]' -stim_base 5 -stim_label 5 yaw -stim_file 6 'motion_demean.1D[3]' -stim_base 6 -stim_label 6 dS -stim_file 7 'motion_demean.1D[4]' -stim_base 7 -stim_label 7 dL -stim_file 8 'motion_demean.1D[5]' -stim_base 8 -stim_label 8 dP -jobs 6 -local_times -fout -tout -x1D X.xmat.1D -xjpeg X.jpg -fitts fitts.estudo1 -errts errts.estudo1 -bucket stats.estudo1 ; Output prefix: errts.estudo1~
+
+type = string-attribute
+name = TYPESTRING
+count = 15
+'3DIM_HEAD_ANAT~
+
+type = string-attribute
+name = IDCODE_STRING
+count = 27
+'XYZ_gEXibbL26aygliDuT4KsiQ~
+
+type = string-attribute
+name = IDCODE_DATE
+count = 25
+'Sun Jun  7 12:12:07 2015~
+
+type = integer-attribute
+name = SCENE_DATA
+count = 8
+ 2 2 0 -999 -999
+ -999 -999 -999
+
+type = string-attribute
+name = LABEL_1
+count = 14
+'errts.estudo1~
+
+type = string-attribute
+name = LABEL_2
+count = 5
+'zyxt~
+
+type = string-attribute
+name = DATASET_NAME
+count = 14
+'errts.estudo1~
+
+type = integer-attribute
+name = ORIENT_SPECIFIC
+count = 3
+ 1 2 4
+
+type  = float-attribute
+name  = ORIGIN
+count = 3
+             72          107.5            -65
+
+type  = float-attribute
+name  = DELTA
+count = 3
+             -3             -3              3
+
+type  = float-attribute
+name  = IJK_TO_DICOM
+count = 12
+             -3              0              0             72              0
+             -3              0          107.5              0              0
+              3            -65
+
+type  = float-attribute
+name  = IJK_TO_DICOM_REAL
+count = 12
+             -3              0              0             72              0
+             -3              0          107.5              0              0
+              3            -65
+
+type  = float-attribute
+name  = BRICK_STATS
+count = 256
+      -13.23937       37.57153      -12.48855       17.97396      -20.86648
+       13.59497      -17.67119        12.9004      -21.68174       19.76643
+      -25.64082       16.09559      -27.19049       14.36903       -16.0743
+       45.15942       -20.1059       16.77923      -19.42731       18.77702
+      -22.59668       17.38372       -26.1938       22.44534      -17.87238
+       48.09599      -16.69746       43.71033      -16.88061       45.95425
+      -16.17219       57.54499      -18.75474       66.67507      -15.88698
+       15.20231      -16.62882        18.6331      -17.67105       81.45341
+      -30.77169       16.10445       -17.5363       33.96218      -20.27229
+       17.60831      -28.41294       16.59962      -36.70807       22.32582
+      -36.02291       20.63992      -26.38807       16.11968      -27.62242
+       16.21454      -23.69576       17.10918      -24.60431       25.32839
+      -31.50337       14.60535      -33.23753       19.36016      -35.22232
+       19.25536      -15.39937       62.21607      -21.08529       64.88568
+      -15.47418       22.96743      -17.48091       33.58827      -15.01487
+       15.30658      -16.00414        20.8568      -28.79521       16.81069
+      -49.48737         20.061      -63.28885       15.43335      -64.30988
+       16.98414      -19.79714       15.51821      -39.68837       17.16103
+      -34.73486       19.64591       -19.2312       18.62219      -20.79079
+       16.99126      -29.33035       18.05025      -21.57523       19.00605
+      -22.94128       17.57228      -23.43343       19.47545      -19.69163
+        14.3601      -18.87383       30.78832      -16.47173       21.12426
+      -24.95856       60.80609       -22.9362       40.87658      -15.79112
+       18.22982      -15.61343       50.38603       -42.6875       17.24862
+      -43.03337       17.92373      -50.07227       17.59212      -19.94482
+       17.81484      -45.94139       22.45071      -17.94548       47.88992
+      -41.40715       19.08547      -34.53257       15.87928      -15.62657
+       21.08442      -32.71812       15.82404      -29.21524       16.25646
+      -35.52054       19.48184      -21.03362       19.97725      -15.18268
+       58.64168      -15.35586       21.13808      -16.03787       17.89268
+      -22.81873       20.16806      -15.15602       37.08035      -17.30098
+       55.39288      -21.41419       29.43016      -17.14701       82.83834
+      -16.99017       29.06487      -17.07392        16.4996      -16.81643
+       37.82752      -14.06245       38.72731      -18.08403       56.37616
+      -15.00398       18.63831       -18.0746       61.43435      -23.29378
+       20.05897      -19.20538       20.43073      -18.41681       56.22271
+      -33.67639       15.27771      -26.22779       17.82546      -14.56184
+       20.28779      -18.70649       17.69783      -15.20952       22.72973
+      -16.86747       16.17114      -20.77818       39.94842      -20.47413
+       16.00114      -19.20264       17.01507      -18.09242       31.27665
+      -18.71586       25.37852      -17.12369       20.69542      -16.70417
+       17.14909      -24.42371       21.59007      -16.26532       34.27565
+      -17.18957       48.00566      -25.51391       16.49178        -15.174
+       18.25837      -19.58831       18.76875      -17.38533       15.34949
+      -22.19284        14.8528      -35.31353       18.20097      -20.81532
+       15.88483      -20.21327       16.13646      -19.76185       15.59412
+      -25.83756       15.33857      -15.66842       18.22425      -12.93798
+       18.75639      -14.73512       16.61038      -17.90826       17.07398
+      -20.73614       17.43117      -18.25945       32.01361      -15.68451
+       18.12751      -15.68222       22.74141      -13.37464       14.48509
+       -14.0272       24.38888      -27.19977         14.754       -34.1061
+       15.43388
+
+type = integer-attribute
+name = TAXIS_NUMS
+count = 8
+ 128 0 77002 -999 -999
+ -999 -999 -999
+
+type  = float-attribute
+name  = TAXIS_FLOATS
+count = 8
+              0              2              0              0              0
+        -999999        -999999        -999999
+
+type = integer-attribute
+name = DATASET_RANK
+count = 8
+ 3 128 0 0 0
+ 0 0 0
+
+type = integer-attribute
+name = DATASET_DIMENSIONS
+count = 5
+ 49 61 50 0 0
+
+type = integer-attribute
+name = BRICK_TYPES
+count = 128
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3 3 3
+ 3 3 3
+
+type  = float-attribute
+name  = BRICK_FLOAT_FACS
+count = 128
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0
+
+type = string-attribute
+name = BRICK_LABS
+count = 2712
+'estudo1.TAREFA.n[3]~estudo1.TAREFA.n[4]~estudo1.TAREFA.n[5]~estudo1.TAREFA.n[6]~estudo1.TAREFA.n[7]~estudo1.TAREFA.n[8]~estudo1.TAREFA.n[9]~estudo1.TAREFA.n[10]~estudo1.TAREFA.n[11]~estudo1.TAREFA.n[12]~estudo1.TAREFA.n[13]~estudo1.TAREFA.n[14]~estudo1.TAREFA.n[15]~estudo1.TAREFA.n[16]~estudo1.TAREFA.n[17]~estudo1.TAREFA.n[18]~estudo1.TAREFA.n[19]~estudo1.TAREFA.n[20]~estudo1.TAREFA.n[21]~estudo1.TAREFA.n[22]~estudo1.TAREFA.n[23]~estudo1.TAREFA.n[24]~estudo1.TAREFA.n[25]~estudo1.TAREFA.n[26]~estudo1.TAREFA.n[27]~estudo1.TAREFA.n[28]~estudo1.TAREFA.n[29]~estudo1.TAREFA.n[30]~estudo1.TAREFA.n[31]~estudo1.TAREFA.n[32]~estudo1.TAREFA.n[33]~estudo1.TAREFA.n[34]~estudo1.TAREFA.n[35]~estudo1.TAREFA.n[36]~estudo1.TAREFA.n[37]~estudo1.TAREFA.n[38]~estudo1.TAREFA.n[39]~estudo1.TAREFA.n[40]~estudo1.TAREFA.n[41]~estudo1.TAREFA.n[42]~estudo1.TAREFA.n[43]~estudo1.TAREFA.n[44]~estudo1.TAREFA.n[45]~estudo1.TAREFA.n[46]~estudo1.TAREFA.n[47]~estudo1.TAREFA.n[48]~estudo1.TAREFA.n[49]~estudo1.TAREFA.n[50]~estudo1.TAREFA.n[51]~estudo1.TAREFA.n[52]~estudo1.TAREFA.n[53]~estudo1.TAREFA.n[54]~estudo1.TAREFA.n[55]~estudo1.TAREFA.n[56]~estudo1.TAREFA.n[57]~estudo1.TAREFA.n[58]~estudo1.TAREFA.n[59]~estudo1.TAREFA.n[60]~estudo1.TAREFA.n[61]~estudo1.TAREFA.n[62]~estudo1.TAREFA.n[63]~estudo1.TAREFA.n[64]~estudo1.TAREFA.n[65]~estudo1.TAREFA.n[66]~estudo1.TAREFA.n[67]~estudo1.TAREFA.n[68]~estudo1.TAREFA.n[69]~estudo1.TAREFA.n[70]~estudo1.TAREFA.n[71]~estudo1.TAREFA.n[72]~estudo1.TAREFA.n[73]~estudo1.TAREFA.n[74]~estudo1.TAREFA.n[75]~estudo1.TAREFA.n[76]~estudo1.TAREFA.n[77]~estudo1.TAREFA.n[78]~estudo1.TAREFA.n[79]~estudo1.TAREFA.n[80]~estudo1.TAREFA.n[81]~estudo1.TAREFA.n[82]~estudo1.TAREFA.n[83]~estudo1.TAREFA.n[84]~estudo1.TAREFA.n[85]~estudo1.TAREFA.n[86]~estudo1.TAREFA.n[87]~estudo1.TAREFA.n[88]~estudo1.TAREFA.n[89]~estudo1.TAREFA.n[90]~estudo1.TAREFA.n[91]~estudo1.TAREFA.n[92]~estudo1.TAREFA.n[93]~estudo1.TAREFA.n[94]~estudo1.TAREFA.n[95]~estudo1.TAREFA.n[96]~estudo1.TAREFA.n[97]~estudo1.TAREFA.n[98]~estudo1.TAREFA.n[99]~estudo1.TAREFA.n[100]~estudo1.TAREFA.n[101]~estudo1.TAREFA.n[102]~estudo1.TAREFA.n[103]~estudo1.TAREFA.n[104]~estudo1.TAREFA.n[105]~estudo1.TAREFA.n[106]~estudo1.TAREFA.n[107]~estudo1.TAREFA.n[108]~estudo1.TAREFA.n[109]~estudo1.TAREFA.n[110]~estudo1.TAREFA.n[111]~estudo1.TAREFA.n[112]~estudo1.TAREFA.n[113]~estudo1.TAREFA.n[114]~estudo1.TAREFA.n[115]~estudo1.TAREFA.n[116]~estudo1.TAREFA.n[117]~estudo1.TAREFA.n[118]~estudo1.TAREFA.n[119]~estudo1.TAREFA.n[120]~estudo1.TAREFA.n[121]~estudo1.TAREFA.n[122]~estudo1.TAREFA.n[123]~estudo1.TAREFA.n[124]~estudo1.TAREFA.n[125]~estudo1.TAREFA.n[126]~estudo1.TAREFA.n[127]~estudo1.TAREFA.n[128]~estudo1.TAREFA.n[129]~estudo1.TAREFA.n[130]~
+
+type = string-attribute
+name = BRICK_KEYWORDS
+count = 128
+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+type = string-attribute
+name = TEMPLATE_SPACE
+count = 4
+'MNI~
+
+type = integer-attribute
+name = INT_CMAP
+count = 1
+ 0
+
+type = string-attribute
+name = BYTEORDER_STRING
+count = 10
+'LSB_FIRST~

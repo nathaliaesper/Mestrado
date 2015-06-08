@@ -1,0 +1,234 @@
+
+type = string-attribute
+name = HISTORY_NOTE
+count = 277
+'[nathalia@marfim: Sun Jun  7 11:39:05 2015] 3dDespike -NEW -nomask -prefix pb01.estudo1.r01.despike pb00.estudo1.r01.tcat+orig\n[nathalia@marfim: Sun Jun  7 11:39:06 2015] 3dTshift -tzero 0 -quintic -prefix pb02.estudo1.r01.tshift -tpattern alt+z pb01.estudo1.r01.despike+orig~
+
+type = string-attribute
+name = TYPESTRING
+count = 15
+'3DIM_HEAD_ANAT~
+
+type = string-attribute
+name = IDCODE_STRING
+count = 27
+'XYZ_Te-ihTKQwY3U4hm66wy_rA~
+
+type = string-attribute
+name = IDCODE_DATE
+count = 25
+'Sun Jun  7 11:39:06 2015~
+
+type = integer-attribute
+name = SCENE_DATA
+count = 8
+ 0 2 0 -999 -999
+ -999 -999 -999
+
+type = string-attribute
+name = LABEL_1
+count = 24
+'pb02.estudo1.r01.tshift~
+
+type = string-attribute
+name = LABEL_2
+count = 5
+'zyxt~
+
+type = string-attribute
+name = DATASET_NAME
+count = 5
+'zyxt~
+
+type = integer-attribute
+name = ORIENT_SPECIFIC
+count = 3
+ 0 2 4
+
+type  = float-attribute
+name  = ORIGIN
+count = 3
+      -106.0417       68.78908      -82.24373
+
+type  = float-attribute
+name  = DELTA
+count = 3
+         3.4375        -3.4375        3.59991
+
+type  = float-attribute
+name  = IJK_TO_DICOM
+count = 12
+         3.4375              0              0      -106.0417              0
+        -3.4375              0       68.78908              0              0
+        3.59991      -82.24373
+
+type  = float-attribute
+name  = IJK_TO_DICOM_REAL
+count = 12
+       3.436313    -0.02675093     -0.0903645      -106.0417             -0
+      -3.283874       1.064167       68.78908     0.09032441       1.015805
+       3.437839      -82.24373
+
+type  = float-attribute
+name  = BRICK_STATS
+count = 256
+             -1           6359             -3           6386              0
+           6323              0           6326              0           6303
+              0           6296              0           6327              0
+           6301              0           6274              0           6272
+              0           6283              0           6353              0
+           6368              0           6281              0           6300
+              0           6349              0           6324              0
+           6323              0           6352              0           6355
+              0           6325              0           6333              0
+           6298              0           6293              0           6336
+              0           6350              0           6340              0
+           6312              0           6324              0           6311
+              0           6312              0           6301              0
+           6278              0           6320              0           6371
+              0           6306              0           6262              0
+           6298              0           6296              0           6286
+              0           6277              0           6266              0
+           6246              0           6274              0           6237
+              0           6246              0           6278              0
+           6268              0           6296              0           6314
+              0           6345              0           6369              0
+           6327              0           6277              0           6314
+              0           6345              0           6370              0
+           6353              0           6323              0           6299
+              0           6308              0           6331              0
+           6328              0           6320              0           6328
+              0           6314              0           6321              0
+           6351              0           6342              0           6324
+              0           6349              0           6386              0
+           6401              0           6366             -1           6348
+              0           6377              0           6380              0
+           6378              0           6368              0           6346
+              0           6359              0           6383              0
+           6419              0           6432              0           6421
+              0           6428              0           6437              0
+           6440              0           6410              0           6400
+              0           6365              0           6340              0
+           6347              0           6350              0           6377
+              0           6353              0           6366              0
+           6381              0           6331              0           6362
+              0           6417              0           6393              0
+           6305              0           6330              0           6440
+              0           6334              0           6243              0
+           6282              0           6366              0           6333
+              0           6265              0           6330              0
+           6363              0           6355              0           6361
+              0           6365              0           6365              0
+           6391              0           6405              0           6382
+              0           6368              0           6366              0
+           6367              0           6369              0           6319
+              0           6329              0           6373             -1
+           6328
+
+type = integer-attribute
+name = TAXIS_NUMS
+count = 8
+ 128 0 77002 -999 -999
+ -999 -999 -999
+
+type  = float-attribute
+name  = TAXIS_FLOATS
+count = 8
+              0              2              0              0              0
+        -999999        -999999        -999999
+
+type = integer-attribute
+name = DATASET_RANK
+count = 8
+ 3 128 0 0 0
+ 0 0 0
+
+type = integer-attribute
+name = DATASET_DIMENSIONS
+count = 5
+ 64 64 29 0 0
+
+type = integer-attribute
+name = BRICK_TYPES
+count = 128
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1
+
+type  = float-attribute
+name  = BRICK_FLOAT_FACS
+count = 128
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0              0              0
+              0              0              0
+
+type = string-attribute
+name = BRICK_LABS
+count = 2712
+'estudo1.TAREFA.n[3]~estudo1.TAREFA.n[4]~estudo1.TAREFA.n[5]~estudo1.TAREFA.n[6]~estudo1.TAREFA.n[7]~estudo1.TAREFA.n[8]~estudo1.TAREFA.n[9]~estudo1.TAREFA.n[10]~estudo1.TAREFA.n[11]~estudo1.TAREFA.n[12]~estudo1.TAREFA.n[13]~estudo1.TAREFA.n[14]~estudo1.TAREFA.n[15]~estudo1.TAREFA.n[16]~estudo1.TAREFA.n[17]~estudo1.TAREFA.n[18]~estudo1.TAREFA.n[19]~estudo1.TAREFA.n[20]~estudo1.TAREFA.n[21]~estudo1.TAREFA.n[22]~estudo1.TAREFA.n[23]~estudo1.TAREFA.n[24]~estudo1.TAREFA.n[25]~estudo1.TAREFA.n[26]~estudo1.TAREFA.n[27]~estudo1.TAREFA.n[28]~estudo1.TAREFA.n[29]~estudo1.TAREFA.n[30]~estudo1.TAREFA.n[31]~estudo1.TAREFA.n[32]~estudo1.TAREFA.n[33]~estudo1.TAREFA.n[34]~estudo1.TAREFA.n[35]~estudo1.TAREFA.n[36]~estudo1.TAREFA.n[37]~estudo1.TAREFA.n[38]~estudo1.TAREFA.n[39]~estudo1.TAREFA.n[40]~estudo1.TAREFA.n[41]~estudo1.TAREFA.n[42]~estudo1.TAREFA.n[43]~estudo1.TAREFA.n[44]~estudo1.TAREFA.n[45]~estudo1.TAREFA.n[46]~estudo1.TAREFA.n[47]~estudo1.TAREFA.n[48]~estudo1.TAREFA.n[49]~estudo1.TAREFA.n[50]~estudo1.TAREFA.n[51]~estudo1.TAREFA.n[52]~estudo1.TAREFA.n[53]~estudo1.TAREFA.n[54]~estudo1.TAREFA.n[55]~estudo1.TAREFA.n[56]~estudo1.TAREFA.n[57]~estudo1.TAREFA.n[58]~estudo1.TAREFA.n[59]~estudo1.TAREFA.n[60]~estudo1.TAREFA.n[61]~estudo1.TAREFA.n[62]~estudo1.TAREFA.n[63]~estudo1.TAREFA.n[64]~estudo1.TAREFA.n[65]~estudo1.TAREFA.n[66]~estudo1.TAREFA.n[67]~estudo1.TAREFA.n[68]~estudo1.TAREFA.n[69]~estudo1.TAREFA.n[70]~estudo1.TAREFA.n[71]~estudo1.TAREFA.n[72]~estudo1.TAREFA.n[73]~estudo1.TAREFA.n[74]~estudo1.TAREFA.n[75]~estudo1.TAREFA.n[76]~estudo1.TAREFA.n[77]~estudo1.TAREFA.n[78]~estudo1.TAREFA.n[79]~estudo1.TAREFA.n[80]~estudo1.TAREFA.n[81]~estudo1.TAREFA.n[82]~estudo1.TAREFA.n[83]~estudo1.TAREFA.n[84]~estudo1.TAREFA.n[85]~estudo1.TAREFA.n[86]~estudo1.TAREFA.n[87]~estudo1.TAREFA.n[88]~estudo1.TAREFA.n[89]~estudo1.TAREFA.n[90]~estudo1.TAREFA.n[91]~estudo1.TAREFA.n[92]~estudo1.TAREFA.n[93]~estudo1.TAREFA.n[94]~estudo1.TAREFA.n[95]~estudo1.TAREFA.n[96]~estudo1.TAREFA.n[97]~estudo1.TAREFA.n[98]~estudo1.TAREFA.n[99]~estudo1.TAREFA.n[100]~estudo1.TAREFA.n[101]~estudo1.TAREFA.n[102]~estudo1.TAREFA.n[103]~estudo1.TAREFA.n[104]~estudo1.TAREFA.n[105]~estudo1.TAREFA.n[106]~estudo1.TAREFA.n[107]~estudo1.TAREFA.n[108]~estudo1.TAREFA.n[109]~estudo1.TAREFA.n[110]~estudo1.TAREFA.n[111]~estudo1.TAREFA.n[112]~estudo1.TAREFA.n[113]~estudo1.TAREFA.n[114]~estudo1.TAREFA.n[115]~estudo1.TAREFA.n[116]~estudo1.TAREFA.n[117]~estudo1.TAREFA.n[118]~estudo1.TAREFA.n[119]~estudo1.TAREFA.n[120]~estudo1.TAREFA.n[121]~estudo1.TAREFA.n[122]~estudo1.TAREFA.n[123]~estudo1.TAREFA.n[124]~estudo1.TAREFA.n[125]~estudo1.TAREFA.n[126]~estudo1.TAREFA.n[127]~estudo1.TAREFA.n[128]~estudo1.TAREFA.n[129]~estudo1.TAREFA.n[130]~
+
+type = string-attribute
+name = BRICK_KEYWORDS
+count = 128
+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+type = string-attribute
+name = TEMPLATE_SPACE
+count = 5
+'ORIG~
+
+type = integer-attribute
+name = INT_CMAP
+count = 1
+ 0
+
+type = string-attribute
+name = BYTEORDER_STRING
+count = 10
+'LSB_FIRST~
